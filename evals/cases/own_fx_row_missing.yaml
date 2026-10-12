@@ -1,0 +1,12 @@
+name: fx row missing
+mailbox: evals/mailboxes/fx_row_missing
+as_of: '2045-02-15'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-112
+    class: overcharge
+  verdict: cannot_determine
+  missing_doc: Annex F
+  action: draft:request_document
+why: fx row missing

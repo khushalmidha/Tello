@@ -1,0 +1,42 @@
+From: billing@asterfreight.example
+To: ap@orchidlabs.example
+Subject: Billing document
+Date: Wed, 01 Feb 2045 12:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============0373550478997820115=="
+
+--===============0373550478997820115==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Please arrange payment for the attached bill.
+
+--===============0373550478997820115==
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="freight-bill.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjcKJcK1wrYKJSBXcml0dGVuIGJ5IE11UERGIDEuMjguMgoKMSAwIG9iago8PC9UeXBl
+L0NhdGFsb2cvUGFnZXMgMiAwIFIvSW5mbzw8L1Byb2R1Y2VyKE11UERGIDEuMjguMik+Pj4+CmVu
+ZG9iagoKMiAwIG9iago8PC9UeXBlL1BhZ2VzL0NvdW50IDEvS2lkc1s0IDAgUl0+PgplbmRvYmoK
+CjMgMCBvYmoKPDwvRm9udDw8L2hlbHYgNSAwIFI+Pj4+CmVuZG9iagoKNCAwIG9iago8PC9UeXBl
+L1BhZ2UvTWVkaWFCb3hbMCAwIDcwMCA5MDBdL1JvdGF0ZSAwL1Jlc291cmNlcyAzIDAgUi9QYXJl
+bnQgMiAwIFIvQ29udGVudHNbNiAwIFJdPj4KZW5kb2JqCgo1IDAgb2JqCjw8L1R5cGUvRm9udC9T
+dWJ0eXBlL1R5cGUxL0Jhc2VGb250L0hlbHZldGljYS9FbmNvZGluZy9XaW5BbnNpRW5jb2Rpbmc+
+PgplbmRvYmoKCjYgMCBvYmoKPDwvTGVuZ3RoIDQyMi9GaWx0ZXIvRmxhdGVEZWNvZGU+PgpzdHJl
+YW0KeNqNU7lu3TAQ7PUVqgPE4d4kEKQIkiadAXWGCz8dSJEUbvz9maVeEvn5BCFC3F3OzoxWw/3w
+dRpoLFg0io3Vyzj9Hj79XH89jIT3bbz5rOzNZ5+5+Brmi7NbMBfdjHkRwsIpkFfyCGQ9qwzVinie
+PW9kxMUt60xM1fK+ulVejIEWOC3akBNtump8uZ1+DGX8SHIVWkqhcfo2gFALwbKEcnUKYMgdF2Ep
+omIghfe+E69oh9rgvwSiIQJ4NEfOCsSJn1BRQDbptiSOWn2CSdhZKq+d2PQB5ph49RblDcGwSkUr
++iowQJ7nXrmhr+4VSnqCAbNWMEuzE5lQE8AhmD53vQtiAACzKoVXPMVPHkdOerjZHbIQ6ObkiW7N
+N4fyl5Za1K5/9e4CEAhdwXTXd1yWVS00+TyN/vMTHhzYEXIMxzbscAO9NoaqR9Hi3v1r0FAvu+Ib
+6K491Z+/5QtqLlx6nJMd48DNc6r6qBPUg93rXj3bEezex+0VDJI+jX2KZJ+sw8zBMbhGyRM1FO3/
+fLybo1+yPLigb/xbct73mfs+DdfDH+yB75MKZW5kc3RyZWFtCmVuZG9iagoKeHJlZgowIDcKMDAw
+MDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDQyIDAwMDAwIG4gCjAwMDAwMDAxMjAgMDAwMDAgbiAK
+MDAwMDAwMDE3MiAwMDAwMCBuIAowMDAwMDAwMjEzIDAwMDAwIG4gCjAwMDAwMDAzMjAgMDAwMDAg
+biAKMDAwMDAwMDQwOSAwMDAwMCBuIAoKdHJhaWxlcgo8PC9TaXplIDcvUm9vdCAxIDAgUi9JRFs8
+QzJBOTZCQzNCNjZFQzM5RkMzQjUxNEMyOTJDMkE3QzI+PDMzQzNDQkJEQTA1REM4RTFBNjk3RUUz
+NjEwMTAxNzZCPl0+PgpzdGFydHhyZWYKOTAwCiUlRU9GCg==
+
+--===============0373550478997820115==--

@@ -1,0 +1,42 @@
+From: billing@asterfreight.example
+To: ap@orchidlabs.example
+Subject: Billing document
+Date: Wed, 01 Feb 2045 12:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============2822078430506580382=="
+
+--===============2822078430506580382==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Please arrange payment for the attached bill.
+
+--===============2822078430506580382==
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="freight-bill.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjcKJcK1wrYKJSBXcml0dGVuIGJ5IE11UERGIDEuMjguMgoKMSAwIG9iago8PC9UeXBl
+L0NhdGFsb2cvUGFnZXMgMiAwIFIvSW5mbzw8L1Byb2R1Y2VyKE11UERGIDEuMjguMik+Pj4+CmVu
+ZG9iagoKMiAwIG9iago8PC9UeXBlL1BhZ2VzL0NvdW50IDEvS2lkc1s0IDAgUl0+PgplbmRvYmoK
+CjMgMCBvYmoKPDwvRm9udDw8L2hlbHYgNSAwIFI+Pj4+CmVuZG9iagoKNCAwIG9iago8PC9UeXBl
+L1BhZ2UvTWVkaWFCb3hbMCAwIDcwMCA5MDBdL1JvdGF0ZSAwL1Jlc291cmNlcyAzIDAgUi9QYXJl
+bnQgMiAwIFIvQ29udGVudHNbNiAwIFJdPj4KZW5kb2JqCgo1IDAgb2JqCjw8L1R5cGUvRm9udC9T
+dWJ0eXBlL1R5cGUxL0Jhc2VGb250L0hlbHZldGljYS9FbmNvZGluZy9XaW5BbnNpRW5jb2Rpbmc+
+PgplbmRvYmoKCjYgMCBvYmoKPDwvTGVuZ3RoIDQzMi9GaWx0ZXIvRmxhdGVEZWNvZGU+PgpzdHJl
+YW0KeNqNUzuP1jAQ7PMrUiMB+95YQhQIGjqkdIiCLw9RQHHN/X5mHThy33EPWXEc73h3ZrwZboYP
+88AjYfCoPk5B4/xrePtj+3k7Mtb7+PWdSbRYYhGKLT3WkPAUIdtdZFVWUhZKxI0jE9EolANt2K/v
+qBO1ExpeOFc38zqPtWO924ZnRU53xa7Wl5MtVlGX1bXHBBEg3n+bPw80vmZ9k0ZEPM4fB1BtqRhe
+RcKC08L1u5AKSJoiDd7SZ5YNRIBN+Ustm1CVN6uYE2RrXIAgyCghrSQBaw9yMmbRSbZObH4F21xj
+ipb0jBV7lzRZQ9W1yMvSkTvq2oEwtgssWWyCYXUNlZmBSeRhXMfS9a7YQwIwm5Rkw0NxiTxzstPJ
+7pCnQrcUT1RrsQeUPzbMc+r6t+guIAOjKpge+s7DC9XSis/D3Ts/4cGJHSMmcGzHDDdQaxeourdL
+Ed2/Bg3TdVXcgR3ale7u8hE1Vy7dj+mR48Qtqqv6T8BQD3ZPe/XfimD3Mm5P5GDt3di7SI/OOvUc
+HINrXDyB4Wz/+uPFHOOa5ckFe+bf0j/z0XOf5uHL8BsSw/UfCmVuZHN0cmVhbQplbmRvYmoKCnhy
+ZWYKMCA3CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDA0MiAwMDAwMCBuIAowMDAwMDAwMTIw
+IDAwMDAwIG4gCjAwMDAwMDAxNzIgMDAwMDAgbiAKMDAwMDAwMDIxMyAwMDAwMCBuIAowMDAwMDAw
+MzIwIDAwMDAwIG4gCjAwMDAwMDA0MDkgMDAwMDAgbiAKCnRyYWlsZXIKPDwvU2l6ZSA3L1Jvb3Qg
+MSAwIFIvSURbPEMzQjA3NkMzODk2MzQwMTA1OUMzOUNDMjlFQzI4NDU1Pjw3MjM0NDQ1RDM1QTE4
+MzlDNTZGMTlDMzdDMTNCNUNFNz5dPj4Kc3RhcnR4cmVmCjkxMAolJUVPRgo=
+
+--===============2822078430506580382==--

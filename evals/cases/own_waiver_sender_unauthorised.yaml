@@ -1,0 +1,10 @@
+name: waiver sender unauthorised
+mailbox: evals/mailboxes/waiver_sender_unauthorised
+as_of: '2045-02-15'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-105
+    class: waived_but_billed
+  verdict: no_finding
+why: waiver sender unauthorised

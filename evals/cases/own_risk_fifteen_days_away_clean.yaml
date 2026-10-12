@@ -1,0 +1,10 @@
+name: risk fifteen days away clean
+mailbox: evals/mailboxes/risk_fifteen_days_away_clean
+as_of: '2045-02-16'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-111
+    class: late_fee_risk
+  verdict: no_finding
+why: risk fifteen days away clean

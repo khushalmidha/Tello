@@ -1,0 +1,13 @@
+name: disputed principal risk
+mailbox: evals/mailboxes/disputed_principal_risk
+as_of: '2045-02-20'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-110
+    class: late_fee_risk
+  verdict: finding
+  amount_usd: '1.76'
+  action: internal:payment_reminder
+  deadline: '2045-03-03'
+why: disputed principal risk

@@ -1,0 +1,12 @@
+name: quoted waiver original missing
+mailbox: evals/mailboxes/quoted_waiver_original_missing
+as_of: '2045-02-15'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-107
+    class: waived_but_billed
+  verdict: cannot_determine
+  missing_doc: original waiver email
+  action: draft:request_document
+why: quoted waiver original missing

@@ -1,0 +1,53 @@
+From: billing@asterfreight.example
+To: ap@orchidlabs.example
+Subject: Signed transport terms
+Date: Sun, 01 Jan 2045 12:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============0090570672642367358=="
+
+--===============0090570672642367358==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Executed agreement attached.
+
+--===============0090570672642367358==
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="transport-agreement.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjcKJcK1wrYKJSBXcml0dGVuIGJ5IE11UERGIDEuMjguMgoKMSAwIG9iago8PC9UeXBl
+L0NhdGFsb2cvUGFnZXMgMiAwIFIvSW5mbzw8L1Byb2R1Y2VyKE11UERGIDEuMjguMik+Pj4+CmVu
+ZG9iagoKMiAwIG9iago8PC9UeXBlL1BhZ2VzL0NvdW50IDEvS2lkc1s0IDAgUl0+PgplbmRvYmoK
+CjMgMCBvYmoKPDwvRm9udDw8L2hlbHYgNSAwIFI+Pj4+CmVuZG9iagoKNCAwIG9iago8PC9UeXBl
+L1BhZ2UvTWVkaWFCb3hbMCAwIDcwMCA5MDBdL1JvdGF0ZSAwL1Jlc291cmNlcyAzIDAgUi9QYXJl
+bnQgMiAwIFIvQ29udGVudHNbNiAwIFJdPj4KZW5kb2JqCgo1IDAgb2JqCjw8L1R5cGUvRm9udC9T
+dWJ0eXBlL1R5cGUxL0Jhc2VGb250L0hlbHZldGljYS9FbmNvZGluZy9XaW5BbnNpRW5jb2Rpbmc+
+PgplbmRvYmoKCjYgMCBvYmoKPDwvTGVuZ3RoIDEwNjYvRmlsdGVyL0ZsYXRlRGVjb2RlPj4Kc3Ry
+ZWFtCnjalVa7jiM3EMz1FYoNnM03Z4CDg4OdODOgzHBgUTNw4Asuue93VTU5orS6W3sXuyNxyO7q
+6upunr6cPl1O/uzw688xn5fizpfPp5/+3v75evb4vJ//+JhyXUouseaa8EzB1VRD8WWrsbqy11Cx
+hu8Vqxm/N/xtXEs+x5xSziHccsCzph1PrKQUbnyRXWppTRE78RVrzT7xBNY3uNv1Pv/85+W3kzt/
+8PHHmpxz/nz55QRwhBUBbKfbGuJfcAtIJZalrASbGqAFwiye+/BcsTOGBtACWlYEtPIcwMW0wCHg
+AVwMG1YjzoV+yux7ecQ3fC4Kei21LAj5rc2ZAllUIJcfQGyOOrcZqYgA3mKILqYIKvD0/b8rgbYU
+RSoLEuCEKfVIiDIX/jBN9I1P37JFC5WWMjEfuwre+wiUMWLXhDJV7C2MFkhX/FXYCDjd6Jt81Mc4
+vAmgpCEEIKRM8pBNuRoK4IwvhWPxIEL4WI1n47vcdCKSK0W/AUce3FV6Zd7po3Y0Td/E0hQTrHOn
+sBOHu4vWUFWnjMc5N8qpIQbLlTaacsF9V8Tn8C5JZZkxZIsX7wZvkDvFfGUB5J3yf2am25c34Cnw
+LBSz5UlBpuksxEk6b9wbyEETusJPZIl7qEBoe7UqST5dVXIL1NnE6yLWyd1hq9ZJ3y66Fwrykesb
+3yHWSlvdE9TFdZ1ylknteDeG1wgfsXTd+FGL0pS4+y4iqDvm7yFCTVONbWiB1sZuKcJ0spfCShAP
+VLsphdFYvh47gzRtdaRabtJEPvT2bMcySA/SFTuXMjQqasZrik/dZh027zlAD3jKwhvdE58Xw976
+h5jxlSda7zOqA6hpPfCMith61acXltmZrV4X07biUw0X9UlYZ33NmqDn9bkmS7JqR4calTY6SBka
++HbVIL7a6/FgPebJzmazQrudeul9n3+b/8Gk0NzMSnBTrO0ejzrkTUzmjtH6mWbX3L/Y2W1udTWs
+HLLT6LW+xD63am+zzKljeO1bbMbVOE48cYlxLmubUJlnIrFeGY9KXHpnbcpX5/5lF4rqHFl7FKFm
+luWGl4dFyO6TaXuYoZX70k2oq9VvMvUf/L+ODDnapeV7B2mPCu4rDwzkfZolU44OZZLfNmop7485
+wMS7asbflKdmGT+Qb71uc6LPHuFzJxAn/tADJ8XUA4/ppikjdTdEvKsnKBu9XwylErfZfJ5yV6zo
+DlKYIfUXXctuOuPZ5+1Gk8Gv4t16JqJU3+p9fSt9/b9HFjdNFbtxVdnRxJzZk/K8zafnvqb5meVt
+dM0HboRcNwfruKnPeiG/r2/jDvC/kU98F8MQdLOJE5aus1FJ6cgG74bvV8nT3en9e95GJXQcWVpv
+ofNY7prYrXsTy7inWAfSnCnzJR3R8Kw68cPth3171JrF8evl9PvpX4NIwN4KZW5kc3RyZWFtCmVu
+ZG9iagoKeHJlZgowIDcKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDQyIDAwMDAwIG4gCjAw
+MDAwMDAxMjAgMDAwMDAgbiAKMDAwMDAwMDE3MiAwMDAwMCBuIAowMDAwMDAwMjEzIDAwMDAwIG4g
+CjAwMDAwMDAzMjAgMDAwMDAgbiAKMDAwMDAwMDQwOSAwMDAwMCBuIAoKdHJhaWxlcgo8PC9TaXpl
+IDcvUm9vdCAxIDAgUi9JRFs8MkM1MkMzODhDM0FEQzI5MjAxQzM4NjI2QzM4QUMyOTM+PDgwQURF
+NzI5MDQ5QTUzM0MxRUQ1NjcwN0RFMzkxRjZCPl0+PgpzdGFydHhyZWYKMTU0NQolJUVPRgo=
+
+--===============0090570672642367358==--

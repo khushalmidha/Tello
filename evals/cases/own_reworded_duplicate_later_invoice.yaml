@@ -1,0 +1,12 @@
+name: reworded duplicate later invoice
+mailbox: evals/mailboxes/reworded_duplicate_later_invoice
+as_of: '2045-02-15'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-114
+    class: duplicate
+  verdict: finding
+  amount_usd: '264.00'
+  action: draft:dispute
+why: reworded duplicate later invoice

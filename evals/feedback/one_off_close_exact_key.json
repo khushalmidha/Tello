@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "world": "OWN",
+  "after_batch": "batch_01",
+  "decided_at": "2045-02-04T10:00:00Z",
+  "items": [
+    {
+      "item_id": "own-close",
+      "finding_key": {
+        "invoice_id": "OR-109",
+        "class": "overcharge"
+      },
+      "decision": "close",
+      "solicited": true,
+      "fact": {
+        "type": "dispute_closed",
+        "value": {
+          "status": "closed"
+        },
+        "evidence": "Settled by AP"
+      },
+      "scope": {
+        "kind": "one_off",
+        "applies_to": {
+          "invoice_id": "OR-109"
+        },
+        "valid_from": "2045-02-04",
+        "valid_to": null
+      }
+    }
+  ]
+}

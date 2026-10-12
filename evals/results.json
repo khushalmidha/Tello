@@ -1,0 +1,133 @@
+{
+ "harness": "harness/harness.py",
+ "passed": 2,
+ "total": 16,
+ "your_cases": 14,
+ "score": 0.125,
+ "cases": [
+  {
+   "case": "own_autonomous_complete_sources.yaml",
+   "name": "autonomous complete sources",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "own_conditional_waiver_unmet.yaml",
+   "name": "conditional waiver unmet",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "own_different_column_order.yaml",
+   "name": "different column order",
+   "pass": false,
+   "diff": [
+    "report exited 1: ^^^^^^^^^^^^^^\n  File \"C:\\Users\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1208, in request\n    raise self._make_status_error_from_response(response) from None\nanthropic.InternalServerError: Error code: 503 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'The stream was interrupted. Please continue the task you were working on.'}}"
+   ]
+  },
+  {
+   "case": "own_disputed_principal_risk.yaml",
+   "name": "disputed principal risk",
+   "pass": false,
+   "diff": [
+    "report exited 1: rs\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1310, in _attempt_request\n    raise APITimeoutError(request=request) from err\nanthropic.APITimeoutError: Request timed out or interrupted. This could be due to a network timeout, dropped connection, or request cancellation. See https://docs.anthropic.com/en/api/errors#long-requests for more details."
+   ]
+  },
+  {
+   "case": "own_document_prompt_injection.yaml",
+   "name": "document prompt injection",
+   "pass": false,
+   "diff": [
+    "report exited 124: timed out after 1200 s"
+   ]
+  },
+  {
+   "case": "own_expiry_sixty_days_inclusive.yaml",
+   "name": "expiry sixty days inclusive",
+   "pass": false,
+   "diff": [
+    "report exited 124: timed out after 1200 s"
+   ]
+  },
+  {
+   "case": "own_future_waiver_excluded.yaml",
+   "name": "future waiver excluded",
+   "pass": false,
+   "diff": [
+    "report exited 1: te-packages\\anthropic\\_base_client.py\", line 1150, in request\n    response, prepared = self._attempt_request(\n                         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1317, in _attempt_request\n    raise APIConnectionError(request=request) from err\nanthropic.APIConnectionError: Connection error."
+   ]
+  },
+  {
+   "case": "own_fx_row_missing.yaml",
+   "name": "fx row missing",
+   "pass": false,
+   "diff": [
+    "report exited 1: te-packages\\anthropic\\_base_client.py\", line 1150, in request\n    response, prepared = self._attempt_request(\n                         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1317, in _attempt_request\n    raise APIConnectionError(request=request) from err\nanthropic.APIConnectionError: Connection error."
+   ]
+  },
+  {
+   "case": "own_inclusive_weight_boundary.yaml",
+   "name": "inclusive weight boundary",
+   "pass": false,
+   "diff": [
+    "report exited 1: te-packages\\anthropic\\_base_client.py\", line 1150, in request\n    response, prepared = self._attempt_request(\n                         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1317, in _attempt_request\n    raise APIConnectionError(request=request) from err\nanthropic.APIConnectionError: Connection error."
+   ]
+  },
+  {
+   "case": "own_one_off_close_exact_key.yaml",
+   "name": "one off close exact key",
+   "pass": false,
+   "diff": [
+    "report exited 1: te-packages\\anthropic\\_base_client.py\", line 1150, in request\n    response, prepared = self._attempt_request(\n                         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1317, in _attempt_request\n    raise APIConnectionError(request=request) from err\nanthropic.APIConnectionError: Connection error."
+   ]
+  },
+  {
+   "case": "own_quoted_waiver_original_missing.yaml",
+   "name": "quoted waiver original missing",
+   "pass": false,
+   "diff": [
+    "report exited 1: te-packages\\anthropic\\_base_client.py\", line 1150, in request\n    response, prepared = self._attempt_request(\n                         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1317, in _attempt_request\n    raise APIConnectionError(request=request) from err\nanthropic.APIConnectionError: Connection error."
+   ]
+  },
+  {
+   "case": "own_risk_fifteen_days_away_clean.yaml",
+   "name": "risk fifteen days away clean",
+   "pass": false,
+   "diff": [
+    "report exited 1: te-packages\\anthropic\\_base_client.py\", line 1150, in request\n    response, prepared = self._attempt_request(\n                         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1317, in _attempt_request\n    raise APIConnectionError(request=request) from err\nanthropic.APIConnectionError: Connection error."
+   ]
+  },
+  {
+   "case": "own_undercharge_clean.yaml",
+   "name": "undercharge clean",
+   "pass": false,
+   "diff": [
+    "report exited 1: te-packages\\anthropic\\_base_client.py\", line 1150, in request\n    response, prepared = self._attempt_request(\n                         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1317, in _attempt_request\n    raise APIConnectionError(request=request) from err\nanthropic.APIConnectionError: Connection error."
+   ]
+  },
+  {
+   "case": "own_waiver_sender_unauthorised.yaml",
+   "name": "waiver sender unauthorised",
+   "pass": false,
+   "diff": [
+    "report exited 1: te-packages\\anthropic\\_base_client.py\", line 1150, in request\n    response, prepared = self._attempt_request(\n                         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1317, in _attempt_request\n    raise APIConnectionError(request=request) from err\nanthropic.APIConnectionError: Connection error."
+   ]
+  },
+  {
+   "case": "sample_conflict.yaml",
+   "name": "amendment and rate notice disagree",
+   "pass": false,
+   "diff": [
+    "report exited 1: te-packages\\anthropic\\_base_client.py\", line 1150, in request\n    response, prepared = self._attempt_request(\n                         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1317, in _attempt_request\n    raise APIConnectionError(request=request) from err\nanthropic.APIConnectionError: Connection error."
+   ]
+  },
+  {
+   "case": "sample_overcharge.yaml",
+   "name": "wrong rate on one freight line",
+   "pass": false,
+   "diff": [
+    "report exited 1: te-packages\\anthropic\\_base_client.py\", line 1150, in request\n    response, prepared = self._attempt_request(\n                         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\khush\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\anthropic\\_base_client.py\", line 1317, in _attempt_request\n    raise APIConnectionError(request=request) from err\nanthropic.APIConnectionError: Connection error."
+   ]
+  }
+ ]
+}

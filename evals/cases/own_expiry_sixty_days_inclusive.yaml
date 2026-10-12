@@ -1,0 +1,12 @@
+name: expiry sixty days inclusive
+mailbox: evals/mailboxes/expiry_sixty_days_inclusive
+as_of: '2046-11-01'
+mode: supervised
+expect:
+  key:
+    contract_id: ASTER-EXPIRY-SIXTY-DAYS-INCLUSIVE
+    class: expiry
+  verdict: finding
+  action: internal:alert
+  deadline: '2046-12-31'
+why: expiry sixty days inclusive

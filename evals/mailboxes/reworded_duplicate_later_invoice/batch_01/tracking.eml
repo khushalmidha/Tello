@@ -1,0 +1,10 @@
+From: billing@asterfreight.example
+To: ap@orchidlabs.example
+Subject: Pickup event
+Date: Thu, 02 Feb 2045 09:00:00 +0000
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Our carrier tracking records show:
+PICKED_UP shipment ORCHID-77 on 2045-01-28 at OAK.

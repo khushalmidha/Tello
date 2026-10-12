@@ -1,0 +1,12 @@
+name: duplicate less partial credit
+mailbox: evals/mailboxes/duplicate_less_partial_credit
+as_of: '2045-02-15'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-115
+    class: duplicate
+  verdict: finding
+  amount_usd: '164.00'
+  action: draft:dispute
+why: duplicate less partial credit

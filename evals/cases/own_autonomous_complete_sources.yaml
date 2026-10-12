@@ -1,0 +1,12 @@
+name: autonomous complete sources
+mailbox: evals/mailboxes/autonomous_complete_sources
+as_of: '2045-02-15'
+mode: autonomous
+expect:
+  key:
+    invoice_id: OR-101
+    class: overcharge
+  verdict: finding
+  amount_usd: '88.00'
+  action: execute:dispute
+why: autonomous complete sources

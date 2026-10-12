@@ -1,0 +1,12 @@
+name: one off close exact key
+mailbox: evals/mailboxes/one_off_close_exact_key
+as_of: '2045-02-15'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-109
+    class: overcharge
+  verdict: no_finding
+why: one off close exact key
+feedback:
+  batch_01: evals/feedback/one_off_close_exact_key.json

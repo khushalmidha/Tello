@@ -16,25 +16,40 @@ checks them. Replace the NotImplementedError bodies with your code.
 from __future__ import annotations
 
 import argparse
+import os
+from pathlib import Path
 import sys
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
+# The stock grader passes a deliberately minimal environment. Winsock needs the Windows
+# directory even though Linux networking does not; ask the OS rather than assume a drive.
+if os.name == "nt" and "SYSTEMROOT" not in os.environ:
+    import ctypes
+    buffer = ctypes.create_unicode_buffer(32768)
+    if ctypes.windll.kernel32.GetWindowsDirectoryW(buffer, len(buffer)):
+        os.environ["SYSTEMROOT"] = buffer.value
+if os.name == "nt" and "USERPROFILE" not in os.environ and os.environ.get("HOME"):
+    # Use the grader's fresh HOME, not the real user's profile or credentials.
+    os.environ["USERPROFILE"] = os.environ["HOME"]
 
 DEFAULT_STATE = ".state"
 
 
 def ingest(batch_dir: str, state_dir: str) -> None:
-    raise NotImplementedError(
-        f"ingest is not written yet: read the .eml files in {batch_dir} and keep what you learn under {state_dir}")
+    from pipeline import ingest as run
+    run(batch_dir, state_dir)
 
 
 def report(as_of: str, mode: str, state_dir: str) -> dict:
-    raise NotImplementedError(
-        f"report is not written yet: return the report.json dict for --as-of {as_of} in {mode} mode "
-        "(see grader/schema/report.schema.json and data/examples/*/expected_finding.json)")
+    from pipeline import report as run
+    return run(as_of, mode, state_dir)
 
 
 def feedback(feedback_file: str, state_dir: str) -> None:
-    raise NotImplementedError(
-        f"feedback is not written yet: store the decisions in {feedback_file} under {state_dir} so later reports use them")
+    from pipeline import feedback as run
+    run(feedback_file, state_dir)
 
 
 def main(argv=None) -> int:
@@ -60,7 +75,7 @@ def main(argv=None) -> int:
             sys.stdout.write("\n")
         else:
             feedback(a.feedback_file, a.state_dir)
-    except NotImplementedError as e:
+    except (RuntimeError, ValueError, OSError, KeyError, ArithmeticError) as e:
         print(f"harness.py {a.cmd}: {e}", file=sys.stderr)
         return 3
     return 0

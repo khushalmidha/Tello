@@ -10,3 +10,5 @@ anthropic==1.8.0
 # lines from the positions and compare labels with spaces removed. On Linux it needs the system libraries libgl1,
 # libglib2.0-0 and libxcb1 (our grading container has them). Remove it if you use vision instead.
 rapidocr-onnxruntime==1.4.4
+# Used directly for PDF raster arrays; pin it as well as the OCR package.
+numpy==2.4.3

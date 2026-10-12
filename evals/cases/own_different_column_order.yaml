@@ -1,0 +1,12 @@
+name: different column order
+mailbox: evals/mailboxes/different_column_order
+as_of: '2045-02-15'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-100
+    class: overcharge
+  verdict: finding
+  amount_usd: '88.00'
+  action: draft:dispute
+why: different column order

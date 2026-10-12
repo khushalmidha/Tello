@@ -1,0 +1,10 @@
+name: inclusive weight boundary
+mailbox: evals/mailboxes/inclusive_weight_boundary
+as_of: '2045-02-15'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-102
+    class: overcharge
+  verdict: no_finding
+why: inclusive weight boundary

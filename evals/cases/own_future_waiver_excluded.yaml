@@ -1,0 +1,10 @@
+name: future waiver excluded
+mailbox: evals/mailboxes/future_waiver_excluded
+as_of: '2045-02-15'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-104
+    class: waived_but_billed
+  verdict: no_finding
+why: future waiver excluded

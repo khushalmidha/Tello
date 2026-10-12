@@ -1,0 +1,14 @@
+name: rebate before due uses billed spend
+mailbox: evals/mailboxes/rebate_before_due_uses_billed_spend
+as_of: '2045-04-01'
+mode: supervised
+expect:
+  key:
+    contract_id: ASTER-REBATE-BEFORE-DUE-USES-BILLED-SPEND
+    class: cashback
+    period: 2045-Q1
+    credit_type: rebate
+  verdict: finding
+  amount_usd: '26.40'
+  action: internal:track_credit
+why: rebate before due uses billed spend

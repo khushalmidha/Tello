@@ -1,0 +1,42 @@
+From: billing@asterfreight.example
+To: ap@orchidlabs.example
+Subject: Billing document
+Date: Wed, 01 Feb 2045 12:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============4310759525657068143=="
+
+--===============4310759525657068143==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Please arrange payment for the attached bill.
+
+--===============4310759525657068143==
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="freight-bill.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjcKJcK1wrYKJSBXcml0dGVuIGJ5IE11UERGIDEuMjguMgoKMSAwIG9iago8PC9UeXBl
+L0NhdGFsb2cvUGFnZXMgMiAwIFIvSW5mbzw8L1Byb2R1Y2VyKE11UERGIDEuMjguMik+Pj4+CmVu
+ZG9iagoKMiAwIG9iago8PC9UeXBlL1BhZ2VzL0NvdW50IDEvS2lkc1s0IDAgUl0+PgplbmRvYmoK
+CjMgMCBvYmoKPDwvRm9udDw8L2hlbHYgNSAwIFI+Pj4+CmVuZG9iagoKNCAwIG9iago8PC9UeXBl
+L1BhZ2UvTWVkaWFCb3hbMCAwIDcwMCA5MDBdL1JvdGF0ZSAwL1Jlc291cmNlcyAzIDAgUi9QYXJl
+bnQgMiAwIFIvQ29udGVudHNbNiAwIFJdPj4KZW5kb2JqCgo1IDAgb2JqCjw8L1R5cGUvRm9udC9T
+dWJ0eXBlL1R5cGUxL0Jhc2VGb250L0hlbHZldGljYS9FbmNvZGluZy9XaW5BbnNpRW5jb2Rpbmc+
+PgplbmRvYmoKCjYgMCBvYmoKPDwvTGVuZ3RoIDQzNS9GaWx0ZXIvRmxhdGVEZWNvZGU+PgpzdHJl
+YW0KeNqNU7uO1EAQzP0VjpGAfrdHQgQIEjIkZ4iA9UMEEFxy30/1GA7fHvfQaMfr7pruqpr2cDN8
+mAceCYtH9XEKGudfw9sf28/bkfF/H7++M4kWSyxCsaXHGhKeImS7i6zKWC6UyBtHJrJRKAfaEK/3
+qBMVCQ0vnKubeZ2vh5Mt1kwRxytiC4LqKqsXVhBtxrYgg1aGV2tu77/NnwcaX7O+SSMiHuePA+i2
+VCyvRmHBaeH6XUhFSev8iqf0nWUDGWBT/tLLJgRCalY5J0jXuABBkFJiWskC1h7UZOyik2yd2PwK
+1rnGFC3pGTtgJMRPEGmoAfKydOSOvnYgIP/SjZlgWl1FVWZgEnUYV7J0vStiKABmk5Js+FFcIs+c
+7HSyO+Sp0C3FE91a7AHljy3znLr+LboLqMDoCqaHvvPyQrW04vMweucnPDixY+QEju3Y4QZ67QJV
+96IU0f1r0DBdd8Ud2KFd6e4uH1Fz5dL9nB41Ttyipqp/CAz1YPe0V//tCHYv4/ZEDdY+jX2K9Jis
+08zBMbjGxRMYzvZvPl7MMa5ZnlywZ74t/bMfM/dpHr4MvwEE4/T3CmVuZHN0cmVhbQplbmRvYmoK
+CnhyZWYKMCA3CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDA0MiAwMDAwMCBuIAowMDAwMDAw
+MTIwIDAwMDAwIG4gCjAwMDAwMDAxNzIgMDAwMDAgbiAKMDAwMDAwMDIxMyAwMDAwMCBuIAowMDAw
+MDAwMzIwIDAwMDAwIG4gCjAwMDAwMDA0MDkgMDAwMDAgbiAKCnRyYWlsZXIKPDwvU2l6ZSA3L1Jv
+b3QgMSAwIFIvSURbPDc5QzM5QTFENDNDMjlFM0UyN0MzODdDMzgzMjJDMkJBPjxGMjhCNDI2QzI5
+N0QzNTAzNzY2QzgzNEE5Q0Q1RkI2Nj5dPj4Kc3RhcnR4cmVmCjkxMwolJUVPRgo=
+
+--===============4310759525657068143==--

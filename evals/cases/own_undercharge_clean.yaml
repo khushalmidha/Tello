@@ -1,0 +1,10 @@
+name: undercharge clean
+mailbox: evals/mailboxes/undercharge_clean
+as_of: '2045-02-15'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-103
+    class: overcharge
+  verdict: no_finding
+why: undercharge clean

@@ -1,0 +1,10 @@
+name: conditional waiver unmet
+mailbox: evals/mailboxes/conditional_waiver_unmet
+as_of: '2045-02-15'
+mode: supervised
+expect:
+  key:
+    invoice_id: OR-106
+    class: waived_but_billed
+  verdict: no_finding
+why: conditional waiver unmet

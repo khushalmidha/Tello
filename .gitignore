@@ -4,3 +4,7 @@ out/state_*/
 __pycache__/
 .env
 *.pyc
+out/bootstrap/
+out/local_*/
+.tools/
+.pytest_cache/
