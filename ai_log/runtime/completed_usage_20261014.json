@@ -1,0 +1,2298 @@
+[
+  {
+    "source": "out/state_exam/model_cache/046b05e7f6068b3d55e143d2d8f80a235e1540844168c1b4723549b8b017214e.json",
+    "input_hash": "8b2842298f87dd6402e3a37343f78dc7f75a477bbb97f8c147c7e94f85fd9714",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 314.094,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 32604,
+      "output_tokens": 3827,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/43cf4873a4ae695413ad6ad12cd8b217557fd6a52f72cebf5307a15f7313381c.json",
+    "input_hash": "018c84cfcd37bfd93ffa36b9f73e674e430e4b83b042151d9e839252e38d3cbb",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 681.422,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 74185,
+      "output_tokens": 26660,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/4b2b3ac89f2678725549206b9bd46a8d3c10075e276e52ba6a768db844182de3.json",
+    "input_hash": "e88c777df8809dbf84ffa13980cbab0cb0c049ddab7dff19e27228ca646ae395",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 385.422,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 42696,
+      "output_tokens": 22438,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/614fdf3e5a48ed94b580a5c78066f215d6a41051058ad1429a1a3ed04cbcbe8c.json",
+    "input_hash": "b4d74c0e0ae8b8fd6b47aa8ea4846475b3bee55fac1aeb8cf5ad0640ae9cce2e",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 643.61,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 45131,
+      "output_tokens": 17352,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/63407e71f7b4432ab6a9f4c4ecddbbf91f3c5a7c313b9de0e45a8b51d50d4cca.json",
+    "input_hash": "5d97bbf4dc4b21951c9d2906e9c30b29add75f6fc56d825c2e6ad1e24fd4abfa",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 561.641,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 76264,
+      "output_tokens": 20390,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/887fda5a2e5d331df6c9bf5d45d6ed63c46bd628c34ff4231edb869f99ce2d98.json",
+    "input_hash": "98d94c5ba0f893011ea3a2fd43194f5b91cb115746c6850445c68460c2b4ad8d",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 414.172,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 20704,
+      "output_tokens": 4631,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/8a692e07b053c58f619047a1e57d0174193f70c1cede262466492acb76e53a32.json",
+    "input_hash": "bcce1d50358693489e8e45a6339e608b7e827409e82098168df58731363d083d",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 725.906,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 80879,
+      "output_tokens": 21703,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/a48ab4186f1c70300005d0f1c9f816b5a3aeadd4eb7a53396020e417105ceafa.json",
+    "input_hash": "e349dd71c6af0b022feac6112dc84790b252d6848de5c8d1408e494a9cf8a3ff",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 634.703,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 81677,
+      "output_tokens": 35251,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/ac52db8d3ca19ae4ea34a56d6f82639750520acf23c4ec23c09264a806b0ddca.json",
+    "input_hash": "91b5c7bcc5a1f418fee70dce021b8e01be1bf91c924f27d1221c31f1c9a35348",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 784.171,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 74167,
+      "output_tokens": 32471,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/bbc97811f265914ef55bc3b453009f382ef511830da51c809c573044d285a183.json",
+    "input_hash": "3579cc73cbf6ed4bdcd52e7eddec08bdfd7faa951951b009b92eb5d83e859ea2",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 712.891,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 81719,
+      "output_tokens": 18184,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/c3bc5d373958d64839a0b12ac10567cb4074696311c530a26706962cdc70a148.json",
+    "input_hash": "158684677187a779efcaba1182dfbd7f1a8cb73a2fdd7a0100ee5807c335fdee",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 542.828,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 74188,
+      "output_tokens": 31725,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/cdb8489052dc3a206ca3435e8327346b68da6f919b0446afe632125cb39d3ca0.json",
+    "input_hash": "c5dac566ef5032cbaaec2cbb9e37309efd6d1a3dc507b6e8e808da2bdd4820dc",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 397.563,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 43413,
+      "output_tokens": 17039,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/e52006b7a1d712f48938d3c001ddb2b3e35602b8e7873c5d07656ea15746fdb8.json",
+    "input_hash": "8690912aa87c0cc56ec89063b4494ae38c40510e4adf3061fa6233d596e0d4c8",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 594.515,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 80770,
+      "output_tokens": 26086,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam/model_cache/f11d396b23c0d1b5ff8e524862fdd901ee3e1cb3c0c418827dc012f18070fc32.json",
+    "input_hash": "96bdbf73426ef13c0983cb277c4e7b58c3d8eb385a5ab90e425ca729fcebd136",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-12.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 570.828,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 74176,
+      "output_tokens": 50596,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/0eafc8fc7b58af6dd5b58f56ac8eb21e412196bdc8fe16408a91f4b041b84d61.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "f0732ec1bf6b75f180429e0461ce5710b3af4e40d258fba0ee407768b658ca58",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 184.813,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 71136,
+      "output_tokens": 28295,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/12577f41ea50ab4f61f5c17f53f6301410260236124898ccd67bea9a9d01b6cd.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "91b5c7bcc5a1f418fee70dce021b8e01be1bf91c924f27d1221c31f1c9a35348",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 258.032,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 68498,
+      "output_tokens": 39396,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/17edb68865e865e39af31f16344771062cf713860bf1d7c9a99ec3672299b0ba.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "3ab24e4432b133a3b6f1108a19945c6bb33060bb5354a4b3f28e18743c36183d",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 208.219,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 69823,
+      "output_tokens": 30116,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/1deedc3c7662fb8fcdd91a1512e7bf9982d755ad93f8a5a851f65a99db585d85.json",
+    "execution_identity": {
+      "backend_model": "claude-sonnet-4-6",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "f7eb74129b362b1b0a16d5edd13790033186158fcb4319025077a08651622dae",
+    "model": "claude-sonnet-4-6",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 161.344,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 94267,
+      "output_tokens": 11350,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/2364e3c4d72929c1eb5d74129dea572fa48e83949a91b842576e87571cfadb3e.json",
+    "execution_identity": {
+      "backend_model": "claude-sonnet-4-6",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "57f1259b91045b7c021d17bb030a446592ffe459f20f1f9433f1304db1c96ea9",
+    "model": "claude-sonnet-4-6",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 434.0,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 51239,
+      "output_tokens": 30639,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/272419d05fd8a5574d6d9cea04c8a00423508f54353794726cb9ef428cde8048.json",
+    "execution_identity": {
+      "backend_model": "claude-sonnet-4-6",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "47eed7b4c789c3b03fbfaaead31750fae1bbf922620101d127ab1a7865463634",
+    "model": "claude-sonnet-4-6",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 295.578,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 40969,
+      "output_tokens": 20571,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/276d8861e7e2a660bbf324551d75325882d7c67ee860cfd57c4eb95dab6ef7da.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "5d5fd14b46728e2a835ba7396bce4379cabdaf531b511b2191ca2f6e9a4f1cdf",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 54.688,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 71143,
+      "output_tokens": 7318,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/2cfe0883369e8d5db616a0c2464db02096a9248bdbb2966b9ac0988bcaa738a9.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "4a291ba55a54ed76f5c621bdedd68f4b2d5d7794e93be6b7811fad3cd0a6f337",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 119.984,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 44658,
+      "output_tokens": 16990,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/2f2ad27e6f977ffaf1999f709a51813c49d52bdf0fda2bc51db38bfcbc02a78d.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "fc8b28f9dcb2f38477dba008eda4f5478365aba824e1f8c8948b2e585e7964dc",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 157.36,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 53116,
+      "output_tokens": 24270,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/38f7f009a066fddc6ca01bf17238fa6d7edf8acaafcdf16a5395dfddbffafc83.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "dfd4f9e1dd419962e7e6ea6c9078166e834da06930e3da62945ef990144b8571",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 145.906,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 52170,
+      "output_tokens": 22332,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/3f9a0370b20a6b4988e6063d3674b80ff169231ba0488c95461abd3a3fc53c00.json",
+    "execution_identity": {
+      "backend_model": "claude-sonnet-4-6",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "8b2842298f87dd6402e3a37343f78dc7f75a477bbb97f8c147c7e94f85fd9714",
+    "model": "claude-sonnet-4-6",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 27.343,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 35355,
+      "output_tokens": 957,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/6cad7da13547ee15adae7fd88aeda762b4b52dfd5b2e65afdec0c598e63dedda.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "cbf6365330a8bc9576f3b4491a686a9a7f8fc7f81bcaebf82ba7edb9029a8fa7",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 169.39,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 52260,
+      "output_tokens": 27924,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/6d2b23a4192e648a326dc2039481a81b86f5e7f882be45a39eac3fae3ed8d1e3.json",
+    "execution_identity": {
+      "backend_model": "claude-sonnet-4-6",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "f84e3e7a37268b59096829fd83da45947acaa9ad023f1eadc5aed8ee02855d84",
+    "model": "claude-sonnet-4-6",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 50.781,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 32269,
+      "output_tokens": 3394,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/6f6fb9447859b591003005a6bf279c55d734df9899d1032d6c51fcc407345ab0.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "924485195f7eeb6da5050b87affe456f8a57a01c7d6fa7385fd56e212a400fd8",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 0.063,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 74533,
+      "output_tokens": 33641,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/70068105e43dba308c8bb20010f579e1577f04a36f1f415951d9abb7c5936400.json",
+    "execution_identity": {
+      "backend_model": "gpt-oss-120b-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "cc80c11e208460bcc2d5a98b342769a283e7347ae8225aceb4a2adcd39263f32",
+      "schema_version": "1.0"
+    },
+    "input_hash": "6342998964583f59a6e19d3453f2f5e6eefd7a99d7b8b9ec6602c1ac38acc7ae",
+    "model": "gpt-oss-120b-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 68.875,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 101921,
+      "output_tokens": 5527,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/7745a6bf39c5f1a2b1d133317f90b45f5797420629a3bca9b2b1ad16e4daae9c.json",
+    "execution_identity": {
+      "backend_model": "claude-sonnet-4-6",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "c6dfe2761e3383b800e7c62116436a150b246cd4b5bbda78436ebad833c1384e",
+    "model": "claude-sonnet-4-6",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 81.937,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 49882,
+      "output_tokens": 4895,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/7cb0238cb1e37bf56b2edf630984649b6ee0d9d4c388dec4e1a8707d7c7320e3.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "018c84cfcd37bfd93ffa36b9f73e674e430e4b83b042151d9e839252e38d3cbb",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 173.11,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 68520,
+      "output_tokens": 28414,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/934b4ad5a0ea9f7b3539c9eb26cac1743a444f9816b3ce29de29219e786f91c5.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "44f45ce27cacdc99654c9e6d5eaa60b8a282772d77d4e2044a92d90b37ee4858",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 167.703,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 69796,
+      "output_tokens": 26432,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/9af8d88011cd331d7570cab97f057e4253330e3bcfd741b620c5354e668a0917.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "e129dbd442fb4978f284d5ab5172a74f79842972b24036470f385593f1dd05ca",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 219.844,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 74499,
+      "output_tokens": 38613,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/ac40172ae08edd8e9842ed00991b3eec6a8912e949996bd6d25fcaab7825ca10.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "b377760691573e94e5882a05a36cd069a3a9eaf764c6029480678608dea8a0f7",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 150.39,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 53249,
+      "output_tokens": 22133,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/b94b4153188de41a0c322e32d0599deb3b1ba15da6cc2a62a2897786591dafdf.json",
+    "execution_identity": {
+      "backend_model": "claude-sonnet-4-6",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "98d94c5ba0f893011ea3a2fd43194f5b91cb115746c6850445c68460c2b4ad8d",
+    "model": "claude-sonnet-4-6",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 33.687,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 11776,
+      "output_tokens": 1347,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/ca12dd2918571e834f727df3cd21df3744e473ac8f5f3e380d13a535fd381f9d.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "63c26d2c764bda4c1882f2216b7d0a525cd442e426aa1f41b8aa9cdcb7bdf895",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 179.594,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 70410,
+      "output_tokens": 28188,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/e23a755dbf4587d4503e92fe05e162b25010f24b8c60ec1455f4c40f664101ee.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "5b40ebcbed207aac73210cae04d0fdcf1f0683a5454a8c4387d9d15120b7dccd",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 127.875,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 50699,
+      "output_tokens": 22857,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/f1d7e50d6fc837a91747bc55be859160ad1bc2d781b62692e53001dd0f36723e.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "c01a3d0acd2fdbec575e1397946a0aa3eacb9b31cdbfca0b287d265b6a93a803",
+      "schema_version": "1.0"
+    },
+    "input_hash": "158684677187a779efcaba1182dfbd7f1a8cb73a2fdd7a0100ee5807c335fdee",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 330.454,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 113343,
+      "output_tokens": 56138,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_exam_claude_20261014/model_cache/f626c627856d8d6e33e1cfb9935d6768031a46cebc6928b721f633a851889167.json",
+    "execution_identity": {
+      "backend_model": "claude-sonnet-4-6",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "b6e3a16000e9c3e98085ebe69200705db9a228bb7aa76ae837572ea14c88b1fd",
+    "model": "claude-sonnet-4-6",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 395.047,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 48143,
+      "output_tokens": 27760,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/0a407b320421fde8f7f9b622e5966f2a7f318459e2a6d69089acfcb01de99ccf.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "13f836aac8a29a8949e0acf3a82b3cb5cc93da26756c7e8e970969306f01c2c0",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 122.735,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 99271,
+      "output_tokens": 18514,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/0f2df2b55b0a1e32508c857b93d01d7aac20405f04eddfb569bc9ed62ca1a29a.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "ead118ef82bc6663acf965a17394648cad95db80fd25d690d660b1d91fb93194",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 0.078,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 132575,
+      "output_tokens": 49872,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/1a6a4970ee65a41e7914c75d3e10ace3fa8e91d312b3845a57586b5d4bf309c0.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "2cd36bb0de60f7bae064ca2badbb9303986fa9ce6ac3e56309a4ac1286f88bb5",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 171.39,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 96965,
+      "output_tokens": 28282,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/1ba90a4650b0dc2310a2e3c3889cac204722d675efa2cf5653cdd51b1337e65d.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "957501d6709ea87d32baf28ba3768acf49b748ffd74445bc7304d375ce1481be",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 171.578,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 104545,
+      "output_tokens": 25430,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/1f5e26033e83f1244544de3500a291f4b6631ad9aab45191047e4aaa74fa9b01.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "2bafcd24851f15fa9f7c013a47b22411048d7853c871edfe3f6c9746598726c5",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 217.39,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 96967,
+      "output_tokens": 32871,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/1fe8d54b3769ae21deecf479e119d1c885c2baec432f8b6ffc88153fc24f891b.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "3e3e791c9692292a71ba9b3dcb3cfa6b4f7ca90657bedaea732ecb39a43ecadd",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 213.719,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 101428,
+      "output_tokens": 37111,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/22dcc64561c9c50fb15b34fedd13f410d1a086b1a9697db79c9cfb619622fe9a.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "8e3d13de463154302d3f21a3e8c2efd2d7272455b6496bdd0edf5a46b863b70c",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 210.718,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 98849,
+      "output_tokens": 36128,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/27a49c8a0cd0cd1a48de60061b5f611a1fca3f9d8b7fc5d830974180fb7c89b1.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "4d48d9b725e5613916fc9c8ae38dc31fed33398c3264824c9a80a6c4e4a5747b",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 209.469,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 96906,
+      "output_tokens": 32097,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/2b2ce7c0aa2145d1b00ed4a34ae0a8ce069c20f79b8499fb621eef29d21e50fb.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "47d3c092ac62f006c5a5a2907dd14eb40f22ea4187879b0100713684b79b6cf7",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 253.25,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 51571,
+      "output_tokens": 40990,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/31154e755ef0cfc6b1ddb375a5d787cce33b461a60e9229a067dd22f729d0b76.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "5043c57ddbbf3223c47865538d9a4415ebd6c486addf6d09a1ad29869b2fad46",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 180.203,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 99674,
+      "output_tokens": 27904,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/323afb3942e4533bb78696002bba1d0dfdb159480a7ae3d70b8f3f686cb47406.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "edf059c1c96bda01de518f11198c13f6e40b071ee8a669b09ed40aab80a909b0",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 400.453,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 76158,
+      "output_tokens": 30283,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/3719bd780dfba24663c8b80682f970f73687129469ee0ee6e3659e558135ef91.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "18912104bad1205f7bd3497b28a7f01f2890b4ec43e9c9a3fc2aaf87702bb715",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 245.218,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 99302,
+      "output_tokens": 40314,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/396ddd2cc38da36f4818334a3233e65d2f21c6950a297a4d7e20b8ccf4f868b4.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "92cdfa364b0461a94238e466896d5f9672de2bd9ab115a87005063fe6f917b8b",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 205.391,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 99188,
+      "output_tokens": 35272,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/3e24f3b2be4e98197029d0f9990228594bb599fc7ad750795e0feb13cf9e5ec5.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "7c35b414b982da016fdb668f12edcee7547f132648fcbea0d4dedb49ed11d101",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 433.141,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 84044,
+      "output_tokens": 44980,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/3f3222f4b7fa540b0f571a41bf2a83d1dc0207cef3fa1f1bd602088befa95ba3.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "4e6b4f0a1617733dcaf89376bace6a74fff2e33f9cd21a30be7af9ef28b50ed0",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 226.109,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 84595,
+      "output_tokens": 29749,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/413c06c3888dd421c8566f397e5e2329714d92a2ebbf0dc0b33ed32f20105c7a.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "eb18153a0e176c554c250b40faf851a66191e011f49ec13cbdabe61973c1e4d4",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 174.109,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 103251,
+      "output_tokens": 26560,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/42264e5cafd43d31bdc4f83c644b3d75d442994414a9b63f595f0c3ca84bc3fa.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "8e89a50eb6e5458d6fc9940b4a955affb7e3e6344d3ad51642a6072c28de9de6",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 599.797,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 76159,
+      "output_tokens": 41709,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/4dfa64c76ea2275b6163c19771087ad4aa1f963a0e3d80b8e00bcf3f306386fd.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "043433c060887d5bc1099dc345a25e65716f2f11b108d66f07c0b1f93e096548",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 208.313,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 98361,
+      "output_tokens": 32037,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/52465813c555963a7f5719b2da52275a2887d47f8f3711500ca374f1fa6110a9.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "591327da6a57f916b80dae9494861301b66f3cac26392375fab2425592003724",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 92.61,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 41611,
+      "output_tokens": 14772,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/5267813c104b13ff3a5f2f54ae98d940b8f7ffc98edb41f8ec8e0bc51c05beb3.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "c977e09d2e57493c697c1fbc8db7413b2aeee2f54b42a8f76b6378e046d540db",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 285.109,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 101409,
+      "output_tokens": 48708,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/675163af42711e286155f95b75c7c6be06e2a8c0a84053b583eae3980b00b1ff.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "df242b00c637433e96c4707dd4cae339cb79659a1607f40db913e7860b7da04b",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 0.063,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 24616,
+      "output_tokens": 4131,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/685f0c9d6f33925c0720bb4818290b2803307aa4d85311049a2f7d9da89d406b.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "241ed5b29f8715edac69f10d34ad4f16092edc2d01467d27d4d1efee8e512d69",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 334.375,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 96966,
+      "output_tokens": 54543,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/6a8e926a64a634f372d82783b9b04eb42f6e2576946836466ab38146e5f1c2c1.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "6c8b6279b5a1cd5b75c7d4e788763f46118b8156e843a4dd96a43bd669c98bc7",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 270.781,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 133856,
+      "output_tokens": 41221,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/6af499d76bcb11d2cca30c10c1888233e2f82507db984baf4b4dc26a70c2318e.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "3dd531bb2145f62e93fbc2dbd71b66939dee6c443437ef7350b5f71cb62c3486",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 608.484,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 76149,
+      "output_tokens": 34070,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/6d339047f2b2cbb2f353db76d6d80bd6ea34162aca9efd4b5e6b8ff929d0c825.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "5e61f7bfae9094b1fc3b4db61d4c04417336bc3406c684b696127ac3ab2e8c32",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 56.328,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 22636,
+      "output_tokens": 7153,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/7e56419c3e0b2fc90cceb4bf40758b5cc4cec9e31e6ebf909c6956e6a26f81f1.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "72c46877e0d38b164070269a96be0e185eb2039ca292c529eb9e302f339aae06",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 149.235,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 76127,
+      "output_tokens": 24628,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/947dd02de1ee4f820fcb80dba0407847c49c9697783e3524ad986551c648261a.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "7250e6205ede62e195cea1ff0753d44a9bcde059260deb76c82b0c97e180c96f",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 181.484,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 101183,
+      "output_tokens": 29511,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/957e9a0d5082f529a7b468aaa5ba192b982811031bbe6b8873c2175ddb5194d3.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "5d8bc255b4eab4a481cc762906964f893ff17d69710a009273fdff166d92075c",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 521.813,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 79965,
+      "output_tokens": 19676,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/959a0da5df4f972a976046bd55a06f754cf4ba1eb5b6d0542324e4b1ad1e47b0.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "db36445075eea11a445f37009ab7878116646653068deb7be8c3712310948239",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 193.094,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 99642,
+      "output_tokens": 31767,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/96457040bda9d29c5f285631e848e876b255949e489cda5db4840645a76822a8.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "9387948487a660a448eadc0554d5dade234f83eb98febc74e9fc1a34744bb1aa",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 151.469,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 56089,
+      "output_tokens": 24130,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/99db1553731be42538462bfeb9eda8a0406467c50fe2113eee11fa48a5322f30.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "b438a1c94531d320f30647009b701072c9c9e1f2b544904e6bc20d0dbd99f042",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 447.953,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 78025,
+      "output_tokens": 18953,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/a17cb3fd6ebbb1fa26b953a37f34f4b99991cd2a83e749159cca0d8bfa801302.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "3bbe5fab2a0cf55879847e0678fb0d59e5fb0a9e060919a1fefde410b2fc4ce1",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "repair",
+    "seconds": 433.547,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 78041,
+      "output_tokens": 13934,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/a4805ff4f2a3410644f7489de959261813a5ace914bd7915e2254b0348ee5298.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "b4ea8b8cbff9338b93bfc8f5ca5766fe306854361863a49f93c199dd007465e3",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 0.078,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 39683,
+      "output_tokens": 26852,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/a9266480be0628a107a8b75954751935962e2cc228151e7c13d5fab5905eec5c.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "a878c25e7dd9bb43e8233c735220de1719b2a12eb0b4c6e67ed23ef10d38236b",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 575.625,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 80216,
+      "output_tokens": 18039,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/a9ead1130a5f5737420bdf44005f6c080308dfec8915ac35911421dfb60df098.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "2070b29e31e303b8bd768936e33c4aa9a5d64a223720a0835f22517e3c71bed9",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 593.5,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 76090,
+      "output_tokens": 6626,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/aeca6515fb62969b62fd5b7234f0722e8bcf95a57d88433308eee1dda0d3aea1.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "72121fac1eb65eac01f202bdc098151e3d27b9ebc7978c3357882f2ace231bec",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 98.328,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 91393,
+      "output_tokens": 15937,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/b4e30133b888e30d7193ac706d9bf5c93fc0375780dc2d658abbfecffc76a27b.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "056381033ebdd5508106d7560ec490bf196e17599ebf0dfef973cd30e0ba1453",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 207.344,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 101154,
+      "output_tokens": 31694,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/cbe3da8119576937f582fb040e7ea62e909f098e38c66afd8ecc81a4c96eeccf.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "56832625110d5f5e92d49241f348034f5bf2bee4d23df021ad462bf8fdd82ef1",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 0.078,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 32755,
+      "output_tokens": 17662,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/cccf9724819e6e49a0c521eba276703fd6e7308b87afd553c1dacd6e20045bc7.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "f784e307447f3781df34f152cd0a57339d468b0fc97e925b79db9d927d242e44",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 566.812,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 43616,
+      "output_tokens": 9510,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/d1e36ed1d65439218e80f44b515a567153f462c6b9beaef43b08b84441aaf0dd.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "5a49b751d9513839df3caaa5b686f4030917b24f28487bd3ca16bd8b40e9173e",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 407.016,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 76046,
+      "output_tokens": 3378,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/d366280b7ce8be88b40d431a6059fc42241623e2002cf837e973f1a236778fcd.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "142c5da5979d803d83f0269a6d8d73e9cd955f7624504049607bb5aa14569632",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 198.203,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 100727,
+      "output_tokens": 30382,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/d93de6bc7ca3813801123c0a13f2397c71347c9114bc7acb59b855913587f513.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "f7ff3e3f6e4945703252ac1c8ac8101864e4de53db3e79d2071ce4714ebadd97",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 224.531,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 43724,
+      "output_tokens": 10896,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/f715976a4747758b566a8bca060d19bf2f0808ee555aab33df963cd745537a83.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "7b999eb9e1f96b776a9b7581fe9bb0c77440c4ed79c5c4c2a5985981ddb56933",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 208.5,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 90970,
+      "output_tokens": 31036,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_practice_resume_20261013/model_cache/f7a370bcca0a770c71cbf1952b68c24f953c691192bb2e9b157212206a304a8a.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "14a784aff837e852a3cfa8d2eb8c3fe232cf7f16334db56d81b4e14c4dd93a58",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 225.89,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 96973,
+      "output_tokens": 36325,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_smoke_20261013/model_cache/8a640131ed33c1df654bacdefcc4c84e74be5cfde69f32011791686af42fd24f.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "3a5c6c85654a7aa9efae0748aa56cdeb9451f10faca53bd49780c747d278d1a3",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "document_index",
+    "seconds": 28.313,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 14185,
+      "output_tokens": 2490,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_smoke_20261013/model_cache/8ad2479169ddf6579cc28e4df625466f393d5be855c08189e8b81f64811cefaa.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "6e5ddf6a892a4653f5ed32d7ba1656d5b6a72cee2ff74f56f1d9c500599777c9",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "review",
+    "seconds": 91.391,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 25068,
+      "output_tokens": 14678,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  },
+  {
+    "source": "out/state_smoke_20261013/model_cache/e8b18cd4e0f5f218bc3f641e77975dcd97aa048218c3643b40e31e80782df2a9.json",
+    "execution_identity": {
+      "backend_model": "gemini-3.8-flash-medium",
+      "cache_version": 2,
+      "model": "claude-sonnet-4-6",
+      "prompt_version": "2026-10-13.1",
+      "provider": "056695df65fbf9f52282d9656bbc9587ba77d43db0ced5408ec3a37180489d35",
+      "schema_version": "1.0"
+    },
+    "input_hash": "ea0aee50f2517eecfa536dfed51b3cf7bde6e75a7b7530dff1ec18db4d69f0c1",
+    "model": "gemini-3.8-flash-medium",
+    "prompt_version": "2026-10-13.1",
+    "requested_model": "claude-sonnet-4-6",
+    "role": "audit",
+    "seconds": 137.547,
+    "usage": {
+      "cache_creation": null,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": null,
+      "inference_geo": null,
+      "input_tokens": 22814,
+      "output_tokens": 21762,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": null
+    }
+  }
+]

@@ -1,0 +1,309 @@
+URGENT: submission is tomorrow. Finish the assessment now.
+
+Use the available Claude/GPT model quota in Antigravity for the remaining critical work. Do NOT continue waiting on exhausted Gemini quota.
+
+CURRENT STATE:
+
+- 107 local tests were passing before the last edit.
+- Practice semantic run completed successfully.
+- Practice score = 98.98/100.
+- ALL practice verdicts and monetary amounts match.
+- Remaining practice misses were 4 autonomous actions.
+- A generic policy bug was identified: request_document actions were incorrectly inheriting pricing-proof authority requirements.
+- A targeted fix was being made when the previous model quota ended.
+- Large-input truncation is already fixed through lossless compaction.
+- Provider/model cache isolation is already implemented.
+- No paid Anthropic API is available.
+- answer_sheet.json is still missing.
+- out/exam_report.json is still missing.
+- Final validator was previously 7/9.
+
+DO NOT restart, re-audit, redesign or broadly refactor the project.
+
+TIME IS CRITICAL.
+
+PRIORITY ORDER:
+
+### 1. FINISH CURRENT POLICY FIX
+
+Inspect the unfinished edit from the previous agent.
+
+Complete only the generic fix separating:
+
+request_document authority requirements
+
+from:
+
+pricing/dispute/claim authority requirements.
+
+Do NOT weaken authority checks for disputes or credits.
+
+Add/run only targeted regression tests first.
+
+Then run the complete local suite ONCE.
+
+Required:
+- all existing tests pass
+- compile passes
+- git diff --check passes
+
+Do not spend semantic calls on this.
+
+### 2. CONFIRM PRACTICE RESULT
+
+Do NOT rerun the entire practice mailbox unless necessary.
+
+The existing valid semantic results already produced:
+
+98.98/100
+all verdicts correct
+all amounts correct
+
+Use cached results where valid.
+
+After the action-policy fix, recompute/regrade actions locally if possible.
+
+If the grader requires report regeneration, regenerate from cached semantic findings without resending successful work to a model.
+
+Goal:
+correct the four action misses without changing verdicts or amounts.
+
+Do NOT chase a cosmetic 100 if doing so requires risky practice-specific logic.
+
+### 3. GENERATE EXAM IMMEDIATELY
+
+This is now the highest priority.
+
+Run the Windows equivalent of:
+
+make sheet
+
+Use the required development semantic backend/model available through Antigravity.
+
+Generate:
+
+answer_sheet.json
+out/exam_report.json
+
+Do NOT manually edit answer_sheet.json.
+
+Do NOT stop to polish custom evals before generating the exam.
+
+Preserve every successful semantic response in provider-specific cache.
+
+Do not resend identical successful calls.
+
+If a request approaches the known ~192 KB Antigravity input limit, use the existing LOSSLESS compaction path.
+
+Do not drop documents or relevant evidence merely to fit the limit.
+
+Retry only genuinely failed calls.
+
+Maximum:
+- one targeted retry for transport/network failure
+- one repair attempt for malformed/evidence-invalid output
+
+Do not loop.
+
+### 4. EXAM FORENSIC VERIFICATION
+
+Once the exam artifacts exist, verify them immediately.
+
+For every reported exam finding verify from data/exam:
+
+- invoice ID
+- finding class
+- verdict
+- pickup date
+- pickup evidence
+- applicable contract/amendment
+- effective/backdated terms
+- source authority
+- billed amount
+- correct amount
+- credit deductions
+- duplicate handling
+- FX
+- rounding
+- conflict
+- cannot_determine
+- missing-document holder
+- citation document/page/quote
+- supervised action
+- autonomous action
+- aggregate $5,000 threshold
+
+Use deterministic Python/Decimal for ALL arithmetic verification.
+
+Do not ask the semantic model to calculate arithmetic that code can calculate.
+
+### SCANNED INVOICE
+
+Explicitly verify the scanned exam invoice.
+
+Check:
+
+- OCR output
+- invoice ID
+- I/1/l and O/0 ambiguity
+- freight
+- fuel
+- security/accessorial lines
+- currency
+- totals
+- corroborating email/tracking identity
+
+Use corroborating documents to normalize identity while keeping OCR citation text verbatim.
+
+### NEGATIVE CASE REVIEW
+
+Quickly inspect plausible cases that might have been missed:
+
+- unauthorized waiver
+- forwarded authority text
+- partial credit
+- clean but unusual invoice
+- superseded term
+- contract extension
+- document received after as_of
+- missing Annex
+- authoritative conflict
+
+Do NOT invent findings just because a case looks suspicious.
+
+### 5. IF EXAM REVIEW FINDS A BUG
+
+Only fix it if it is GENERIC.
+
+Procedure:
+
+synthetic regression test
+→ minimal generic fix
+→ targeted local tests
+→ regenerate only affected result if possible
+
+Do NOT hardcode:
+- exam IDs
+- carrier names
+- customer names
+- amounts
+- expected findings
+
+Do NOT repeatedly regenerate the entire exam.
+
+### 6. CUSTOM EVALS
+
+Only after answer_sheet.json and exam_report.json are safely generated.
+
+Run fresh custom evals if time allows.
+
+Do NOT block submission-critical exam artifacts while chasing custom eval perfection.
+
+If semantic calls would consume excessive remaining time, prioritize:
+1. exam
+2. validator
+3. documentation
+4. custom-eval score improvement
+
+The eval requirement still needs a valid saved result, but do not broadly debug synthetic edge cases before the exam is complete.
+
+### 7. FINAL DOCUMENTATION
+
+Update only factual stale information in:
+
+SOLUTION.md
+DESIGN.md
+AI_USE.md
+
+AI_USE.md must truthfully mention:
+
+- Codex GPT-6.1-sol
+- Astra Medium
+- Antigravity Gemini
+- Claude/GPT through Antigravity if used now
+- no paid Anthropic API calls
+
+Also mention important failures/fixes:
+- duplicate invoice ownership
+- ledger normalization
+- calculation provenance
+- authority provenance
+- cache provider isolation
+- Antigravity ~192 KB input truncation
+- lossless compaction
+- concatenated CLI output recovery
+- practice action-policy issue
+
+Do not spend expensive model reasoning polishing prose.
+
+### 8. FINAL VALIDATION
+
+Run:
+
+.\tools\tasks.ps1 -Task validate
+
+Target:
+
+9 / 9 PASS
+
+If validation fails, fix ONLY the explicit failed check.
+
+Also run:
+
+git diff --check
+
+and secret checks for:
+- API keys
+- authorization tokens
+- .env credentials
+- local proxy secrets
+
+Do not commit secrets.
+
+### 9. DO NOT COMMIT YET
+
+Once 9/9 validation passes, STOP before making the final git commit.
+
+I want to inspect the final status before submission.
+
+OUTPUT ONLY THIS:
+
+FINAL STATUS: READY / NOT READY
+
+Practice:
+score:
+verdicts:
+amounts:
+actions:
+
+Local tests:
+X passed / X failed
+
+Custom eval:
+X / Y
+or reason not completed
+
+Exam:
+answer_sheet.json: YES/NO
+out/exam_report.json: YES/NO
+scanned invoice verified: YES/NO
+money totals independently verified: YES/NO
+
+Validation:
+X / 9
+
+Remaining blockers:
+maximum 3 bullets
+
+Model calls:
+Claude/GPT calls:
+Gemini calls:
+cache reused: YES/NO
+
+Files still requiring attention:
+maximum 5
+
+NO long narration.
+NO progress commentary.
+NO repeated summaries.
+USE TOOLS AND FINISH THE WORK.

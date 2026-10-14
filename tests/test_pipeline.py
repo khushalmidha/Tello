@@ -37,7 +37,6 @@ class PipelineTests(unittest.TestCase):
             message.set_content(body)
             (self.batch / f"{name}.eml").write_bytes(message.as_bytes())
         ingest(str(self.batch), str(self.state))
-        self.amount = "10.00"
         self.verdict = "finding"
         self.calls = []
         self.bad_quote = False
@@ -58,11 +57,18 @@ class PipelineTests(unittest.TestCase):
         if self.bad_quote and role != "repair":
             ev["quote"] = "invented source quote is unacceptable"
         item = {"class": "overcharge", "invoice_id": "BILL-7", "verdict": self.verdict,
-                "calculation": {"amount": self.amount, "currency": "USD", "steps": []},
+                "calculation": {"amount": "max(0, billed - cents(rate * weight))", "currency": "USD", "steps": [],
+                    "inputs": [{"name": name, "value": value, "source_text": value, "evidence": source}
+                               for name, value, source in [("billed", "110.00", ev), ("rate", "2.00", clause), ("weight", "50", ev)]]},
                 "evidence": [ev, clause], "context": {"contract_id": "GENERIC-1", "requires_pickup": True,
                              "pickup": {"date": "2045-01-28", "kind": "invoice", "evidence": ev}},
                 "confidence_signals": {"complete": True, "authoritative": True, "extraction": 1,
                                        "agreement": 1, "effective": True, "ambiguity": 0}}
+        if any(doc["doc"] == "batch_02/credit.eml" for doc in data["documents"]):
+            credit = {"doc": "batch_02/credit.eml", "page": 1, "quote": "Credit issued USD 1.00 against BILL-7 freight."}
+            item["calculation"]["inputs"].append({"name": "credit", "value": "1.00", "source_text": "1.00", "evidence": credit})
+            item["calculation"]["amount"] = "max(0, billed - cents(rate * weight) - credit)"
+            item["evidence"].append(credit)
         items = [item] if "BILL-7" in data["target_invoice_ids"] else []
         if self.verdict == "cannot_determine":
             item["missing_doc"] = {"name": "rate annex", "holder": {"person": "Morgan Hale"}}
@@ -80,9 +86,42 @@ class PipelineTests(unittest.TestCase):
         result = report("2045-02-15", "autonomous", str(self.state))
         self.assertEqual(result["findings"][0]["action"], "human_review")
 
+    def test_optional_period_null_is_omitted_and_non_null_preserved(self):
+        def ask_with_period(*args, **kwargs):
+            response = self.ask(*args, **kwargs)
+            for item in response.get("items", []):
+                item["period"] = period
+            return response
+
+        with patch.object(Model, "ask", side_effect=ask_with_period):
+            for verdict in ("finding", "no_finding"):
+                self.verdict = verdict
+                for period in (None, "P2"):
+                    with self.subTest(verdict=verdict, period=period):
+                        result = report("2045-02-15", "supervised", str(self.state))
+                        self.assertEqual(schema_errors(result), [])
+                        item = result["findings"][0]
+                        self.assertEqual(item["verdict"], verdict)
+                        self.assertEqual(item["action"], "draft:dispute" if verdict == "finding" else "none")
+                        if period is None:
+                            self.assertNotIn("period", item)
+                        else:
+                            self.assertEqual(item["period"], period)
+                        if verdict == "finding":
+                            self.assertEqual(item["amount_usd"], "10.00")
+
     def test_changed_amount_supersedes_and_repeat_preserves_history(self):
         first = report("2045-02-15", "supervised", str(self.state))["findings"][0]
-        self.amount = "9.00"
+        batch = self.root / "batch_02"
+        batch.mkdir()
+        message = EmailMessage()
+        message["From"] = "Morgan Hale <morgan@example.test>"
+        message["To"] = "AP <ap@customer.test>"
+        message["Date"] = "Thu, 16 Feb 2045 12:00:00 +0000"
+        message["Subject"] = "Partial credit"
+        message.set_content("Credit issued USD 1.00 against BILL-7 freight.")
+        (batch / "credit.eml").write_bytes(message.as_bytes())
+        ingest(str(batch), str(self.state))
         second = report("2045-02-16", "supervised", str(self.state))["findings"][0]
         repeated = report("2045-02-16", "supervised", str(self.state))["findings"][0]
         self.assertEqual(second["supersedes"], [first["id"]])

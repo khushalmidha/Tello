@@ -6,6 +6,7 @@ from datetime import date
 from decimal import Decimal, ROUND_CEILING, ROUND_HALF_UP, localcontext
 
 CENT = Decimal("0.01")
+FUNCTIONS = {"cents", "ceil", "min", "max", "days"}
 
 
 def decimal(value) -> Decimal:
@@ -84,14 +85,25 @@ def evaluate(expression: str, variables: dict | None = None) -> Decimal:
     return result
 
 
-def calculate(plan: dict) -> tuple[str, dict]:
-    """Round lines only where explicitly requested; convert once after summing a finding."""
+def calculation_values(plan: dict) -> dict:
+    """Source validation happens at the proposal boundary; arithmetic stays deterministic."""
     values = {}
+    for source in plan.get("inputs", []):
+        name = source["name"]
+        if not isinstance(name, str) or not name.isidentifier() or name in values or name in FUNCTIONS:
+            raise ValueError("calculation inputs must have unique identifier names")
+        values[name] = decimal(source["value"])
     for step in plan.get("steps", []):
         name = step["name"]
-        if not isinstance(name, str) or not name.isidentifier() or name in values:
+        if not isinstance(name, str) or not name.isidentifier() or name in values or name in FUNCTIONS:
             raise ValueError("calculation step names must be unique identifiers")
         values[name] = evaluate(step["expression"], values)
+    return values
+
+
+def calculate(plan: dict) -> tuple[str, dict]:
+    """Round lines only where explicitly requested; convert once after summing a finding."""
+    values = calculation_values(plan)
     amount = evaluate(plan["amount"], values)
     currency = plan.get("currency", "USD").upper()
     if currency == "INR":

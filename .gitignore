@@ -5,6 +5,7 @@ __pycache__/
 .env
 *.pyc
 out/bootstrap/
-out/local_*/
+out/local_*
+out/practice_reports/
 .tools/
 .pytest_cache/

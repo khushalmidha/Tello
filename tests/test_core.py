@@ -17,22 +17,15 @@ from money import calculate, cents, evaluate
 from policy import actions, conflicts_overlap, feedback_effects, key, scope_matches
 from pipeline import Evidence, available, feedback, ingest, report, risk_amounts
 from store import Store
-
-
-def evidence(quote="SIGNED terms and conditions"):
-    return {"doc": "batch_01/0001.eml#terms.pdf", "page": 1, "quote": quote}
+from test_provenance import authority_fixture
 
 
 def candidate(identifier="BILL-7", amount="100.00", kind="overcharge"):
-    ev = evidence()
-    contact = evidence("Billing disputes contact <billing@example.test>")
-    return {"invoice_id": identifier, "class": kind, "verdict": "finding", "amount_usd": amount,
-            "evidence": [ev], "confidence_signals": {"complete": True, "effective": True, "authoritative": True},
-            "context": {"contract_id": "CUSTOM-AGREEMENT", "lane": "A-B", "charge": "freight",
-                        "valid_from": "2045-01-01", "valid_to": "2045-12-31", "requires_pickup": True,
-                        "pickup": {"date": "2045-02-01", "kind": "tracking", "evidence": ev},
-                        "terms": [{"authority": "signed", "evidence": ev}], "facts": [ev],
-                        "recipient": {"address": "billing@example.test", "evidence": contact}}}
+    _, item = authority_fixture()
+    item.update(invoice_id=identifier, amount_usd=amount, **{"class": kind})
+    item["context"].update(contract_id="CUSTOM-AGREEMENT", lane="A-B", charge="freight",
+                           valid_from="2045-01-01", valid_to="2045-12-31", requires_pickup=True)
+    return item
 
 
 class MoneyTests(unittest.TestCase):
@@ -74,7 +67,8 @@ class MoneyTests(unittest.TestCase):
 class PolicyTests(unittest.TestCase):
     def run_action(self, item, mode="autonomous", others=None):
         items = [item] + (others or [])
-        actions(items, mode, "2045-02-15", lambda citation: bool(citation and citation.get("doc")))
+        evidence = Evidence(authority_fixture()[0])
+        actions(items, mode, "2045-02-15", evidence.valid, evidence.authority_supported)
         return item["action"]
 
     def test_supervised_drafts(self):

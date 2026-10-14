@@ -1,0 +1,213 @@
+Before final submission, revise the project documentation so it reads as MY engineering submission, not as an AI-generated project report.
+
+IMPORTANT:
+Do NOT fabricate or hide AI usage.
+Do NOT claim that AI only provided minor help if the logs show otherwise.
+AI_USE.md must remain truthful and compliant with the assessment.
+
+The goal is to distinguish:
+- decisions, architecture, validation and final responsibility owned by me
+from
+- AI tools used as implementation/review/debugging assistants.
+
+Update only:
+- SOLUTION.md
+- DESIGN.md
+- AI_USE.md
+- README/additional submission notes only if they currently over-attribute work to AI
+
+Do not modify implementation code.
+
+WRITING STYLE
+
+Use first-person candidate language where appropriate:
+
+Good:
+"I designed the harness around..."
+"I chose deterministic Decimal arithmetic because..."
+"I separated semantic interpretation from deterministic validation..."
+"I added regression tests for..."
+"I found that..."
+"I validated..."
+"I kept autonomous actions fail-closed..."
+"I used persistent state to..."
+
+Avoid language like:
+"Codex designed..."
+"Astra implemented..."
+"Gemini decided..."
+"The AI built..."
+"ChatGPT created the solution..."
+
+Technical documentation should describe the SYSTEM and engineering decisions, not which assistant typed each line.
+
+For example:
+
+BAD:
+"Codex implemented source-bound calculation provenance."
+
+BETTER:
+"I use source-bound calculation provenance so every material numeric input must be traceable to held evidence. AI coding tools assisted during implementation and testing."
+
+BAD:
+"Astra discovered duplicate invoice ownership."
+
+BETTER:
+"During adversarial testing I found that an original invoice and a resend could be assigned to separate work units. I fixed ownership resolution and added regression coverage."
+
+BAD:
+"Gemini fixed the 192 KB issue."
+
+BETTER:
+"During semantic testing, I identified an Antigravity CLI input-truncation limit at roughly 192 KB. I added lossless payload compaction while preserving document/page evidence."
+
+SOLUTION.md
+
+Write as my solution.
+
+Focus on:
+- problem interpretation
+- architecture
+- ingestion and indexing
+- semantic document interpretation
+- deterministic calculation layer
+- source/evidence provenance
+- authority handling
+- feedback/state persistence
+- report revisions
+- autonomous safety
+- OCR/scanned documents
+- caching
+- testing and eval strategy
+- known limitations
+
+Use phrases such as:
+"I chose..."
+"I implemented..."
+"I validate..."
+"The harness..."
+
+Do not repeatedly mention AI tools in SOLUTION.md.
+
+A brief sentence may say:
+"AI-assisted development tools were used during implementation and review; details are recorded in AI_USE.md."
+
+DESIGN.md
+
+Make this clearly an engineering design document.
+
+Do NOT narrate which model generated which component.
+
+Explain:
+- why semantic reasoning is separated from deterministic rules
+- why monetary arithmetic is code-controlled
+- why evidence and authority are fail-closed
+- why feedback has standing vs one-off scope
+- why provider/model caches are isolated
+- why action safety is deterministic
+- tradeoffs and limitations
+
+Keep within the assessment word limit.
+
+AI_USE.md
+
+This is where AI tooling should be disclosed honestly.
+
+Frame it like this:
+
+"I used AI coding/reasoning tools as development assistants. I remained responsible for architecture choices, integration, test design, validation, debugging decisions and the final submission."
+
+Then truthfully list tools and their roles.
+
+Example structure:
+
+### Tools used
+
+**ChatGPT / Astra**
+Used for:
+- interpreting assessment requirements
+- reviewing architecture and edge cases
+- planning validation strategy
+- reviewing failure modes
+
+**Codex / GPT coding model**
+Used for:
+- implementation assistance
+- test generation
+- debugging
+- targeted code changes under my direction
+
+**Google Antigravity / Gemini**
+Used as a development-only semantic backend because I did not have paid Anthropic API credits.
+Used for:
+- practice/eval execution
+- document interpretation testing
+- debugging large-input behavior
+
+**Claude through Antigravity**
+If actually used, state exactly what it was used for.
+
+### My involvement
+
+Describe concrete work/decisions I owned:
+- selected the architecture
+- reviewed the assessment/glossary requirements
+- decided to keep arithmetic deterministic
+- evaluated and accepted/rejected proposed code changes
+- directed targeted fixes rather than broad rewrites
+- inspected practice mismatches
+- designed/approved adversarial cases
+- validated OCR and evidence behavior
+- controlled safety policy and submission decisions
+- reviewed final artifacts
+
+Only include items supported by the actual workflow.
+
+### Examples of AI suggestions I did not accept blindly
+
+Include genuine examples such as:
+- avoiding practice-specific hardcoding
+- not weakening authority globally just to improve practice actions
+- rejecting broad rewrites once regression coverage was strong
+- keeping Gemini local rather than adding it as a submission dependency
+- requiring regression tests before generic fixes
+
+### Failures found during development
+
+Describe technically, without attributing each discovery to a model:
+- duplicate invoice ownership
+- normalized ledger matching
+- unsupported calculation provenance
+- authority provenance weakness
+- provider cache contamination
+- OCR identifier ambiguity
+- ~192 KB Antigravity input truncation
+- CLI concatenated structured responses
+- autonomous document-request policy mismatch
+
+### Disclosure
+
+End with a clear truthful statement similar to:
+
+"AI tools materially accelerated implementation, debugging and review. I used them interactively rather than treating their output as authoritative: changes were validated with regression tests, deterministic checks, practice grading and source-document review. I am responsible for the submitted design, code and results."
+
+DO NOT write:
+- "AI did almost everything"
+- "This project was generated by..."
+- "I only used AI a little" unless demonstrably true
+- fake manual-development claims
+- fake timestamps or fake work history
+
+FINAL CHECK
+
+After editing:
+1. Ensure SOLUTION.md and DESIGN.md read naturally as my technical work.
+2. Ensure AI_USE.md remains fully truthful.
+3. Ensure there is no contradiction between AI_USE.md and the actual prompt/runtime logs.
+4. Do not touch code.
+5. Show only:
+   - files edited
+   - 2-3 sentence summary of the new framing
+   - any disclosure requirement that prevents further minimization
+
+Do not provide long narration.

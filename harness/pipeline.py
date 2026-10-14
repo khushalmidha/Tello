@@ -5,6 +5,7 @@ import copy
 import calendar
 import json
 import os
+import re
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timezone
 from decimal import Decimal
@@ -13,14 +14,15 @@ from pathlib import Path
 from grader.extract import norm
 from grader.validate import schema_errors
 from model import Model, PROMPT_VERSION
-from money import calculate, cents, decimal, evaluate, usd
-from policy import actions, confidence, feedback_effects, invoice_id, key, open_feedback
+from money import calculate, calculation_values, cents, decimal, evaluate, usd
+from policy import actions, confidence, feedback_effects, invoice_id, invoice_in_text, key, open_feedback
 from prompts import AUDIT, INDEX, OUTPUT, VERIFY
+from provenance import AuthorityProof, calculation_provenance
 from reader import document_payload, read_email
 from store import Store, digest
 
 ROOT = Path(__file__).resolve().parent.parent
-WORKERS = 4 if os.environ.get("ANTHROPIC_BASE_URL", "").startswith(("http://127.0.0.1:", "http://localhost:")) else 12
+WORKERS = 1 if os.environ.get("ANTHROPIC_BASE_URL", "").startswith(("http://127.0.0.1:", "http://localhost:")) else 12
 MAX_UNIT_INVOICES = 6
 
 
@@ -79,7 +81,7 @@ def available(store: Store, as_of: str) -> list[dict]:
 def index_records(records: list[dict], model: Model, store: Store) -> list[dict]:
     indexed, pending = [], []
     for record in records:
-        index_hash = digest([PROMPT_VERSION, INDEX, record])
+        index_hash = digest([model.cache_identity, INDEX, record])
         cached = store.read(f"index/{index_hash}.json")
         if cached is not None:
             indexed.append(dict(record, index=cached))
@@ -123,6 +125,10 @@ def index_records(records: list[dict], model: Model, store: Store) -> list[dict]
 
 def build_units(records: list[dict], as_of: str, feedback_items: list[dict]) -> list[dict]:
     """Use exact extracted identifiers for joins; no carrier-specific formats or layout rules."""
+    records = copy.deepcopy(records)
+    for record in records:
+        for field in ("invoice_ids", "billed_invoice_ids"):
+            record["index"][field] = sorted({invoice_id(value) for value in record["index"][field]})
     contracts = {cid for r in records if "agreement" in r["index"]["kinds"] for cid in r["index"]["contract_ids"]}
     assignments = {}
     groups = {contract: set() for contract in contracts}
@@ -130,11 +136,14 @@ def build_units(records: list[dict], as_of: str, feedback_items: list[dict]) -> 
         ix = record["index"]
         if not ix["billed_invoice_ids"]:
             continue
-        known = sorted(set(ix["contract_ids"]) & contracts)
-        group = known[0] if len(known) == 1 else "__unassigned__"
-        groups.setdefault(group, set()).update(ix["billed_invoice_ids"])
+        known = set(ix["contract_ids"]) & contracts
         for identifier in ix["billed_invoice_ids"]:
-            assignments.setdefault(identifier, set()).add(group)
+            assignments.setdefault(identifier, set()).update(known)
+    # Ownership is decided once per printed identity, after every representation is seen.
+    # Conflicting agreement references remain one unknown unit with all instruments held.
+    for identifier, known in assignments.items():
+        group = next(iter(known)) if len(known) == 1 else "__unassigned__"
+        groups.setdefault(group, set()).add(identifier)
     units = []
     for contract, ids in sorted(groups.items()):
         is_unknown = contract == "__unassigned__"
@@ -172,7 +181,7 @@ def build_units(records: list[dict], as_of: str, feedback_items: list[dict]) -> 
                         for page in document["pages"]:
                             lines = page["text"].splitlines()
                             page["text"] = "\n".join(line for n, line in enumerate(lines) if n < 4 or
-                                              any(identifier in line for identifier in identifiers))
+                                              any(invoice_in_text(identifier, line) for identifier in identifiers))
                 sources.extend(payload)
         unit_feedback = [fb for fb in feedback_items if is_unknown or
                          fb.get("scope", {}).get("applies_to", {}).get("contract_id") in (None, contract)]
@@ -203,16 +212,43 @@ class Evidence:
             return False
         return norm(quote) in norm(document["pages"][page - 1])
 
+    def authority_supported(self, item, remedy):
+        return AuthorityProof(self).supports(item, remedy)
+
     def locate(self, value) -> None:
-        """Correct a page number only when the exact quote occurs once in the SAME document."""
+        """Recover verbatim citations in the same held document without inventing text."""
         if isinstance(value, list):
             for entry in value:
                 self.locate(entry)
         elif isinstance(value, dict):
+            if {"name", "value", "source_text", "evidence"} <= value.keys():
+                citation = value["evidence"]
+                if isinstance(citation, dict) and not self.valid(citation):
+                    document = self.docs.get(citation.get("doc"))
+                    quote, token = citation.get("quote"), value.get("source_text")
+                    if document and isinstance(quote, str) and isinstance(token, str) and token:
+                        # A scalar can use a verbatim suffix despite a mistaken
+                        # leading label. Keep the shipment/invoice identifier,
+                        # charge and numeric token; require one exact held match.
+                        for word in re.finditer(r"\S+", quote):
+                            suffix = quote[word.start():].strip()
+                            if (len("".join(suffix.split())) < 40 or token not in suffix or
+                                    not re.search(r"\b[A-Za-z]{2,}\d{4,}\b", suffix)):
+                                continue
+                            matches = [(i + 1, page) for i, page in enumerate(document["pages"])
+                                       for _ in range(page.count(suffix))]
+                            if len(matches) == 1:
+                                citation.update(page=matches[0][0], quote=suffix)
+                                break
             if {"doc", "page", "quote"} <= value.keys() and not self.valid(value):
                 document = self.docs.get(value["doc"])
                 quote = value["quote"]
                 if document and isinstance(quote, str) and len("".join(quote.split())) >= 12:
+                    decoded = re.sub(r"\\+([nrt])", lambda match: {"n": "\n", "r": "\r", "t": "\t"}[match[1]], quote)
+                    decoded_matches = [i + 1 for i, page in enumerate(document["pages"])
+                                       if norm(decoded) in norm(page)]
+                    if decoded != quote and (self.valid(dict(value, quote=decoded)) or len(decoded_matches) == 1):
+                        value["quote"] = quote = decoded
                     matches = [i + 1 for i, page in enumerate(document["pages"]) if norm(quote) in norm(page)]
                     if len(matches) == 1:
                         value["page"] = matches[0]
@@ -240,8 +276,10 @@ class Evidence:
                     errors.append(f"{finding_key} lacks evidence")
                 if item["verdict"] == "conflict" and len(citations) < 2:
                     errors.append(f"{finding_key} conflict needs both sources")
-                plans = [item.get("calculation", {})] + item.get("range_calculations", [])
+                plans = ([item["calculation"]] if item.get("calculation") and item["verdict"] == "finding" else [])
+                plans += item.get("range_calculations", [])
                 for plan in plans:
+                    calculation_provenance(plan, self)
                     for step in plan.get("steps", []):
                         if not step.get("evidence"):
                             errors.append(f"{finding_key} step {step.get('name')} lacks source evidence")
@@ -256,14 +294,16 @@ class Evidence:
                                                        missing.get("holder", {}).get("party")):
                         errors.append(f"{finding_key} missing document needs name and holder")
                 if item["verdict"] == "finding" and item["class"] != "expiry":
-                    calculate(item["calculation"])
+                    computed = calculate(item["calculation"])[0]
+                    if item.get("amount_usd") is not None and decimal(item["amount_usd"]) != decimal(computed):
+                        errors.append(f"{finding_key} supplied amount differs from deterministic calculation")
                 if item["verdict"] == "finding" and item["class"] in {"expiry", "late_fee_risk"}:
                     date.fromisoformat(item["deadline"])
                 if item["verdict"] == "finding" and item["class"] == "late_fee_risk":
                     principal = item["risk_principal"]
-                    evaluate(principal["open"])
-                    evaluate(principal["rate_percent"])
-                    if principal["currency"].upper() == "INR" and evaluate(principal["fx"]) <= 0:
+                    calculation_provenance(principal, self, ("open", "rate_percent"))
+                    values = calculation_values(principal)
+                    if principal["currency"].upper() == "INR" and evaluate(principal["fx"], values) <= 0:
                         errors.append("late-fee risk FX must be positive")
                 if item["verdict"] == "conflict":
                     if len(item.get("range_calculations", [])) != 2:
@@ -271,7 +311,7 @@ class Evidence:
                     else:
                         for plan in item["range_calculations"]:
                             calculate(plan)
-            except (ValueError, KeyError, TypeError, ArithmeticError) as exc:
+            except (ValueError, KeyError, TypeError, ArithmeticError, SyntaxError) as exc:
                 errors.append(f"invalid candidate: {exc}")
         return errors
 
@@ -279,6 +319,17 @@ class Evidence:
 def signature(item):
     return {field: item.get(field) for field in ("class", "invoice_id", "contract_id", "period", "credit_type",
                                                "verdict", "amount_usd", "amount_range", "deadline")}
+
+
+def unique_candidates(candidates: list[dict]) -> list[dict]:
+    """Duplicate keys are an error, never an implicit last-writer-wins merge."""
+    seen = set()
+    for item in candidates:
+        identity = key(item)
+        if identity in seen:
+            raise ValueError(f"duplicate finding key across work units: {identity}")
+        seen.add(identity)
+    return candidates
 
 
 def run_unit(unit: dict, model: Model, evidence: Evidence, glossary: str) -> list[dict]:
@@ -338,10 +389,11 @@ def risk_amounts(candidates: list[dict]) -> None:
         if item["class"] != "late_fee_risk" or item["verdict"] != "finding":
             continue
         plan = item["risk_principal"]
+        values = calculation_values(plan)
         currency = plan["currency"].upper()
         if currency not in {"USD", "INR"}:
             raise ValueError(f"unsupported late-fee currency: {currency}")
-        fx = evaluate(plan["fx"]) if currency == "INR" else Decimal(1)
+        fx = evaluate(plan["fx"], values) if currency == "INR" else Decimal(1)
         if fx <= 0:
             raise ValueError("late-fee risk FX must be positive")
         # Reconstruct original-currency disputes from calculation plans, avoiding USD rounding on each line.
@@ -355,8 +407,8 @@ def risk_amounts(candidates: list[dict]) -> None:
             else:
                 original = dict(finding["calculation"], currency="USD")
                 reductions += decimal(calculate(original)[0])
-        principal = max(Decimal(0), evaluate(plan["open"]) - reductions)
-        item["amount_usd"] = usd(cents(principal * evaluate(plan["rate_percent"]) / 100) / fx)
+        principal = max(Decimal(0), evaluate(plan["open"], values) - reductions)
+        item["amount_usd"] = usd(cents(principal * evaluate(plan["rate_percent"], values) / 100) / fx)
 
 
 def report(as_of: str, mode: str, state_dir: str) -> dict:
@@ -374,7 +426,7 @@ def report(as_of: str, mode: str, state_dir: str) -> dict:
                           for item in result]
     else:
         candidates = []
-    candidates = feedback_effects(candidates, feedback_items)
+    candidates = feedback_effects(unique_candidates(candidates), feedback_items)
     risk_amounts(candidates)
     filtered = []
     for item in candidates:
@@ -398,7 +450,7 @@ def report(as_of: str, mode: str, state_dir: str) -> dict:
             continue
         filtered.append(item)
     candidates = sorted(filtered, key=key)
-    actions(candidates, mode, as_of, evidence.valid)
+    actions(candidates, mode, as_of, evidence.valid, evidence.authority_supported)
     history = [snapshot for snapshot in store.records("reports") if snapshot["as_of"] <= as_of]
     previous = max(history, key=lambda snapshot: (snapshot["as_of"], snapshot.get("revision", 0)), default={})
     previous_map = {key(item): item for item in previous.get("items", [])}
@@ -428,6 +480,8 @@ def report(as_of: str, mode: str, state_dir: str) -> dict:
               "amount_range", "deadline", "evidence", "missing_doc", "retro", "learned_at", "action"}
     for candidate in candidates:
         item = {field: value for field, value in candidate.items() if field in fields}
+        if item.get("period") is None:
+            item.pop("period", None)
         identity = digest(signature(item))[:16]
         item["id"] = f"{item['class']}:{identity}"
         item["confidence"] = confidence(candidate)

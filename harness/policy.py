@@ -3,12 +3,26 @@ from __future__ import annotations
 
 from datetime import date
 from decimal import Decimal
+import re
 
 from money import decimal
 
 
 def invoice_id(value: str) -> str:
     return "".join(c for c in str(value).upper() if not c.isspace() and c not in "#:")
+
+
+def invoice_in_text(identifier: str, text: str) -> bool:
+    """Match canonical identity without deleting identifier boundaries or altering citations.
+
+    Hyphens remain meaningful: AB-12 and A-B12 never become equal.
+    """
+    wanted = invoice_id(identifier)
+    if not wanted:
+        return False
+    ignored = r"[\s#:]*"
+    pattern = r"(?<![\w-])" + ignored.join(re.escape(c) for c in wanted) + r"(?![\w-])"
+    return any(invoice_id(match.group()) == wanted for match in re.finditer(pattern, text, re.IGNORECASE))
 
 
 def key(item: dict) -> tuple:
@@ -68,6 +82,9 @@ def feedback_effects(candidates: list[dict], records: list[dict]) -> list[dict]:
     by_id = {record["item_id"]: record for record in records}
     for item in candidates:
         discard = False
+        # Provenance is assigned only from held, applicable feedback below; never accept
+        # a model-written learned_at as proof of a human's authority.
+        item.pop("learned_at", None)
         claimed = item.pop("feedback_ids", [])
         learned = []
         for record in records:
@@ -134,7 +151,7 @@ def confidence(item: dict) -> float:
     return round(max(.05, min(.98, score)), 3)
 
 
-def actions(candidates: list[dict], mode: str, as_of: str, citation_valid) -> None:
+def actions(candidates: list[dict], mode: str, as_of: str, citation_valid, authority_valid=None) -> None:
     totals = {}
     for item in candidates:
         if item["verdict"] != "finding" or item["class"] in ("expiry", "late_fee_risk"):
@@ -163,6 +180,15 @@ def actions(candidates: list[dict], mode: str, as_of: str, citation_valid) -> No
         if mode == "supervised":
             item["action"] = f"draft:{remedy}" if under_threshold else "human_review"
             continue
+        if remedy == "request_document":
+            proof = authority_valid is not None and authority_valid(item, remedy)
+            checks = {"evidence_complete": proof and bool(item.get("evidence")) and
+                      all(citation_valid(ev) for ev in item["evidence"]),
+                      "no_conflict": not any(conflicts_overlap(item, conflict) for conflict in conflicts),
+                      "under_threshold": under_threshold, "reversible": True, "authority": proof}
+            item["safety_checks"] = checks
+            item["action"] = f"execute:{remedy}" if all(checks.values()) else "human_review"
+            continue
         terms = context.get("terms", [])
         authority = bool(terms) and all(term.get("authority") in ("signed", "schedule1", "feedback") and
                     (citation_valid(term.get("evidence")) or
@@ -178,7 +204,9 @@ def actions(candidates: list[dict], mode: str, as_of: str, citation_valid) -> No
         recipient_ok = recipient_ok and citation_valid(recipient_evidence)
         # A Schedule 1 entry must be cited from a held signed instrument, not an invoice or email body.
         recipient_ok = recipient_ok and "#" in recipient_evidence.get("doc", "") and any(
-            term.get("authority") == "signed" and term.get("evidence", {}).get("doc") == recipient_evidence.get("doc")
+            (term.get("authority") == "signed" and term.get("evidence", {}).get("doc") == recipient_evidence.get("doc")) or
+            (term.get("authority") == "schedule1" and term.get("schedule_evidence", {}).get("doc") == recipient_evidence.get("doc")
+             and term.get("signature_evidence", {}).get("doc") == recipient_evidence.get("doc"))
             for term in terms)
         pickup = context.get("pickup", {})
         requires_pickup = kind == "overcharge" or context.get("requires_pickup") is not False
@@ -194,6 +222,6 @@ def actions(candidates: list[dict], mode: str, as_of: str, citation_valid) -> No
         no_conflict = not any(conflicts_overlap(item, conflict) for conflict in conflicts)
         checks = {"evidence_complete": complete and pickup_ok and effective, "no_conflict": no_conflict,
                   "under_threshold": under_threshold, "reversible": remedy in ("dispute", "claim_credit", "request_document"),
-                  "authority": authority and recipient_ok}
+                  "authority": authority and recipient_ok and authority_valid is not None and authority_valid(item, remedy)}
         item["safety_checks"] = checks
         item["action"] = f"execute:{remedy}" if all(checks.values()) else "human_review"

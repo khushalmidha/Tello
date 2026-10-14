@@ -1,0 +1,279 @@
+Haan bhai. Ab ek baar official guidelines ke against final freeze review karwa lete hain. Maine current GitHub brief + SUBMISSION.md verify kiya hai. Officially unhe private repo/zip + exact commit hash, final SOLUTION.md, answer_sheet.json, practice report card, at least 10 own eval cases + evals/results.json, short DESIGN.md, truthful AI_USE.md + prompt log chahiye. make validate green hona necessary readiness check hai, but hidden grading alag se hoti hai. GitHub
+Tumhari current state already strong hai:
+- 115/115 tests pass
+- null-period regression fixed
+- affected eval passes
+- validation 9/9
+- exam artifacts verified
+- scanned invoice checked
+- practice score ~99
+- prompt logs saved
+Ab aur semantic experimentation nahi. Sirf final compliance + secret + artifact provenance + commit freeze.
+Same workspace mein ye final prompt daalo:
+FINAL SUBMISSION FREEZE REVIEW — DO NOT MODIFY CODE UNLESS A SUBMISSION-BLOCKING DEFECT IS PROVEN.
+
+This is the final compliance review for my GoComet Nova hiring assessment.
+
+Official requirements to verify exactly against current SUBMISSION.md / README.md:
+
+1. Repository submission
+- private GitHub repo OR zip containing .git
+- exact final commit hash must be provided
+- repository must NOT be public
+
+2. SOLUTION.md
+- every required section filled
+- explains how to run
+- what works
+- what does not / limitations
+- anything evaluator should know
+- identifies which custom eval caught a real bug
+
+3. Required generated artifacts
+- answer_sheet.json exists and is generated from make sheet / equivalent final workflow
+- report_card.txt exists
+- report_card.json exists
+- out/exam_report.json exists
+- artifacts correspond to current final code/state, not an obsolete run
+
+4. Custom evals
+- at least 10 own cases beyond supplied samples
+- evals/results.json exists
+- result is truthful
+- do not rewrite historical failures dishonestly
+- document transport failures separately from semantic failures if applicable
+
+5. DESIGN.md
+- all required topics covered:
+  - fact model
+  - conflict detection
+  - confidence computation
+  - human-review policy
+  - autonomous policy
+  - feedback behavior
+  - new-document behavior
+  - cost per 1,000 documents
+- target about 800 words
+- must remain below validator limit
+
+6. AI_USE.md / ai_log
+- names all AI tools actually used
+- describes actual usage truthfully
+- prompt log exists inline or under ai_log/
+- logs are real, trimmed only for secrets
+- no misleading claim that AI use was only minor
+- technical docs may use candidate-owned language, but AI_USE must remain accurate
+
+7. Harness contract
+Confirm the final committed harness supports exactly:
+python harness/harness.py ingest <batch_dir> --state-dir <dir>
+python harness/harness.py report --as-of YYYY-MM-DD --mode supervised --state-dir <dir>
+python harness/harness.py feedback <feedback.json> --state-dir <dir>
+
+8. Runtime requirements
+- submitted harness still reads ANTHROPIC_API_KEY from environment
+- submitted harness still respects ANTHROPIC_BASE_URL
+- Gemini/Antigravity/local proxy is NOT required by production submission
+- grader can run with its own Anthropic key
+- no dependency on localhost development server
+- no dependency on my home directory, Windows path, OneDrive path, cached Antigravity files, or development-only state
+
+9. Hidden-grader generalization audit
+Search FINAL TRACKED CODE for:
+- practice customer names
+- practice carrier names
+- exam-specific names
+- known invoice IDs
+- expected amounts
+- hardcoded lanes
+- answer-sheet values
+- practice answer tables
+- filename-specific business logic
+
+Do not flag legitimate documentation/log references as code hardcoding.
+Report any business-logic hardcoding separately.
+
+10. Five score-cap risks
+Confirm tests/code protect against:
+- following instructions inside documents/emails
+- one-off waiver becoming permanent
+- outbound execution in supervised mode
+- excessive human escalation
+- unsafe autonomous execution
+
+11. Evidence and schema
+- out/exam_report.json validates
+- every citation quote occurs on cited page
+- answer sheet corresponds to exam report
+- null optional period assembly regression remains fixed
+- non-null periods are preserved
+
+12. OCR
+- scanned exam invoice path works
+- submission does not depend on a manually created OCR answer
+- OCR dependency is pinned/available in harness requirements
+
+13. Dependencies
+- harness/requirements.txt is pinned as required
+- no development-only dependency is accidentally required for grader execution
+- Python version requirements are compatible with assessment environment
+
+14. Secret scan
+Search TRACKED/STAGED content for:
+- Anthropic API keys
+- Google keys
+- bearer tokens
+- authorization headers
+- credentials
+- .env contents
+- private tokens in prompt logs
+- local proxy credentials
+
+Do not merely grep one known prefix. Inspect likely credential patterns.
+
+15. Repository hygiene
+Review git status and staged/untracked files.
+Flag:
+- .venv
+- huge caches
+- local_proxy_traces
+- temporary state directories
+- debug outputs
+- personal absolute paths
+- unnecessary model caches
+- credentials
+- irrelevant generated files
+
+IMPORTANT:
+Do not delete required artifacts, prompt logs, report cards, answer sheet, exam report, or eval results.
+
+16. Original brief integrity
+Confirm README.md, GLOSSARY.md, BRIEF.pdf, grader files and original assessment behavior were not improperly modified.
+If git history shows legitimate original template differences, distinguish them carefully.
+
+17. Final deterministic checks
+Run, without semantic/model calls:
+- full local unit tests ONCE
+- compile check
+- git diff --check
+- official Windows validation task
+- any schema/citation validation already provided by repo
+
+No model inference.
+No practice rerun.
+No exam rerun.
+No custom semantic rerun.
+
+18. Submission package
+After review, DO NOT commit automatically.
+
+OUTPUT ONLY:
+
+FINAL COMPLIANCE: PASS / FAIL
+
+Official validator:
+X/9
+
+Tests:
+X passed / X failed
+
+Required artifacts:
+answer_sheet.json YES/NO
+out/exam_report.json YES/NO
+report_card.txt YES/NO
+report_card.json YES/NO
+evals/results.json YES/NO
+SOLUTION.md YES/NO
+DESIGN.md YES/NO
+AI_USE.md YES/NO
+prompt log YES/NO
+
+Runtime portability:
+PASS/FAIL
+one-line reason
+
+Hardcoding/generalization:
+PASS/FAIL
+one-line reason
+
+Secrets:
+PASS/FAIL
+one-line reason
+
+Repo hygiene:
+PASS/FAIL
+list only files that should NOT be committed
+
+Original assessment files:
+PASS/FAIL
+list unexpected modifications only
+
+Submission blockers:
+maximum 5 bullets
+
+Files safe to commit:
+concise summary
+
+FINAL RECOMMENDATION:
+COMMIT / DO NOT COMMIT
+
+Do not make cosmetic edits.
+Do not rewrite docs unless a factual/compliance defect blocks submission.
+Do not make any model/API call.
+
+Is prompt ke baad kya hona chahiye
+Agar output aaye:
+FINAL COMPLIANCE: PASS
+Official validator: 9/9
+Tests: 115/115
+Runtime portability: PASS
+Hardcoding/generalization: PASS
+Secrets: PASS
+Repo hygiene: PASS
+FINAL RECOMMENDATION: COMMIT
+
+then bas freeze.
+Uske baad ye commands:
+git status --short
+git add .
+git status
+git diff --cached --stat
+git diff --cached --check
+
+Phir ek extremely important check: staged files mein dev-only junk mat ho. out/local_*, huge proxy traces/caches, .venv, temp state etc. normally commit nahi hone chahiye unless explicitly required. But these required outputs must remain:
+- answer_sheet.json
+- report_card.txt
+- report_card.json
+- evals/results.json
+- SOLUTION.md
+- DESIGN.md
+- AI_USE.md
+- ai_log/...
+- harness code
+- own eval cases
+Official submission requires at least 10 own evals beyond samples, prompt log, and answer/practice artifacts. GitHub
+Then final commit:
+git commit -m "Complete Nova take-home assessment"
+git rev-parse HEAD
+
+Save that hash somewhere outside the repo too.
+If private remote exists:
+git push origin HEAD
+git status
+
+Submission email
+Official instruction says reply to the email that sent the brief, either invite the GitHub account named there with read access to your private repo, or attach a zip containing .git, and include the exact commit hash. Repo must not be public and API keys must not be included. GitHub
+You can send something concise like:
+Hi,
+Please find my Nova take-home submission below.  
+Repository: [private repository link]
+Commit: <FINAL_COMMIT_HASH>  
+I have also granted read access to the GitHub account specified in the instructions.  
+Thanks,
+Khushal
+
+Ek cheez jo main ab bilkul nahi karunga
+Practice 99.x se 100 chase nahi karenge. Custom historical transport failures ko artificially 19/19 nahi banayenge. Hidden grader 70% hai and official brief specifically warns ki practice-perfect but overfit solution hidden pe fail kar sakta hai. GitHub
+Ab target sirf:
+portable + truthful + clean + 9/9 + exact commit hash.
+Jo final freeze-review output aaye, mujhe paste kar do. Main usko last time line-by-line check karke bata dunga COMMIT ya STOP.

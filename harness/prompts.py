@@ -40,7 +40,8 @@ context {contract_id,lane,charge,period,period_end,valid_from,valid_to,invoice_d
   requires_pickup: boolean,
   pickup: {date: ISO,kind:"tracking"|"carrier_email"|"awb"|"invoice"|"not_applicable",evidence:{doc,page,quote}},
   recipient: {address: Schedule 1 address,evidence:{doc,page,quote}},
-  terms: [{authority:"signed"|"schedule1"|"feedback",evidence:{doc,page,quote},feedback_item_id: optional}],
+  terms: [{authority:"signed"|"schedule1"|"feedback",evidence:{doc,page,quote},feedback_item_id: optional,
+           signature_evidence:{doc,page,quote},schedule_evidence:{doc,page,quote},category: relevant category}],
   facts: [{doc,page,quote}],
   credit_due: ISO date or null},
 For cashback, context.period_end is the actual last date of the quarter/contract year, including leap years.
@@ -63,12 +64,35 @@ Evidence must include deciding sources AND billed line/ledger, not just a generi
 12 non-whitespace characters. Do not join nonadjacent lines into one quote. OCR text may omit spaces; cite exactly
 what is supplied. Schedule 1 recipient evidence must include their address and category or role. Never obtain
 recipient addresses from an invoice or ordinary email body.
+Autonomous authority needs explicit proof, not just authority labels or confidence flags:
+For a signed term, signature_evidence quotes actual execution/signature text in the SAME instrument as the
+term. A clause requiring signatures is NOT proof of execution. Cite an affirmative signed/executed-by-both-
+parties statement, or the executed-by-authorised-officers statement and both signed-for-and-on-behalf-of blocks.
+For a Schedule 1 email term, schedule_evidence quotes the sender's exact address AND decision category from
+the signed Schedule 1; signature_evidence proves that instrument's execution. The email must be held as an
+original and its From header must match. Forwarded/quoted authority is insufficient.
+For context.recipient add category (billing_disputes for disputes; the appropriate credits/rebates/cashback/
+treasury category for claims), signature_evidence, and the exact Schedule 1 address/category quotation. The
+Schedule 1 header must appear on that quoted page before its entry; it may be a separate heading.
+For each pickup add carrier_evidence (signed Schedule 1 entry supporting the carrier sender address) and
+signature_evidence for that instrument. The pickup evidence must contain the PICKED_UP/picked-up event AND
+its ISO date. A tracking export also needs its enclosing held carrier email. Missing proof holds the action
+for human review, without changing the finding verdict. Do not fabricate proof to obtain execution.
 For scans, cross-check ambiguous invoice/shipment identifier glyphs against the accompanying email, tracking/AWB
 records and attachment title. Keep OCR citations verbatim while using the corroborated identifier for the key.
 
 For each monetary finding supply calculation {currency:"USD"|"INR",fx: expression if INR,
+  inputs:[{name: unique identifier,value: decimal string,source_text: EXACT numeric token,
+           evidence:{doc,page,quote}}],
+  dates:[{value: ISO date,evidence:{doc,page,quote}}] if days() is used,
   steps:[{name: unique identifier,expression: decimal expression,evidence:[{doc,page,quote}]}],
   amount: expression using steps}. Do not output amount_usd yourself.
+Bind EVERY billed amount, rate, quantity, credit, threshold and FX value as an input. source_text is the exact
+numeric token appearing in its citation (commas allowed); value is the same Decimal without commas. Quotes must
+identify the meaning of that input. A valid unrelated quote cannot support an invented input. Derived recovery
+need not appear in any source: derive it from input names in steps/amount. Do not smuggle material literals into
+expressions. Only glossary constants 0 (clamp), 100 (percent divisor), 30 (days per fee month) may appear inline.
+FX and risk fields must also reference source-bound names. Each days() date must be bound in dates with evidence.
 Expressions support decimal literals, quoted decimal strings, + - * /, parentheses, cents(x) (HALF_UP),
 ceil(x), min(...), max(...), and days("YYYY-MM-DD","YYYY-MM-DD"). No other functions or syntax.
 Explicitly cents(rate * quantity) for each correct line, cents(percent / 100 * rounded_base) for surcharges;
@@ -79,7 +103,8 @@ Zero amount means no finding, omit it. For conflict use range_calculations:[low_
 low=max(0,billed-higher_correct) and high=max(0,billed-lower_correct), converted once if INR. No amount for expiry.
 If an Annex F row is missing, cannot_determine; never approximate a conversion. Only USD and INR are supported.
 
-For late_fee_risk also supply risk_principal {open: expression, currency:"USD"|"INR",fx: expression or null,
+For late_fee_risk also supply risk_principal {inputs:[same source-bound input objects],steps:[],
+open: expression, currency:"USD"|"INR",fx: expression or null,
 rate_percent: expression, evidence:[...]} WITHOUT subtracting disputes. The code deducts actual findings for that
 invoice in original currency and recomputes one month. Use the original invoice's due date/extended date and invoice
 FX month. Newly paid invoices are absent. Do not assume every invoice was paid just because no ledger entry exists;
